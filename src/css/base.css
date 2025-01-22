@@ -1,9 +1,15 @@
 :root {
-  color: #0c0c0c;
-  background-color: #fbfbfb;
+  --black: #111;
+  --dark-purple: #1e1823;
+  --orange: #fd9222;
+  --white: #fafafa;
+
+  color: #111;
+  background-color: #fafafa;
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
 
