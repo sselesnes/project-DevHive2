@@ -11,6 +11,26 @@
 .products-title-span {
   color: var(--orange);
 }
+.products-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  width: 335px;
+  height: 364px;
+  background: #fff;
+}
+.price-card {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  width: 94px;
+  height: 33px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .price {
   font-weight: 600;
   font-size: 14px;
