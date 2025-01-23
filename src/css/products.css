@@ -1,19 +1,2 @@
 .products {
 }
-.products-title {
-  font-weight: 600;
-  font-size: 20px;
-  letter-spacing: -0.03em;
-  text-align: center;
-  color: var(--black);
-  margin-bottom: 32px;
-}
-.products-title-span {
-  color: var(--orange);
-}
-.price {
-  font-weight: 600;
-  font-size: 14px;
-  text-align: center;
-  color: var(--black);
-}
