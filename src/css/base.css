@@ -4,8 +4,8 @@
   --orange: #fd9222;
   --white: #fafafa;
 
-  color: (var --black);
-  background-color: (var --white);
+  color: var(--black);
+  background-color: var(--white);
 }
 
 body {
