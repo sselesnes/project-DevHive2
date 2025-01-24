@@ -64,8 +64,45 @@
   text-align: center;
   color: var(--black);
 }
-
+.offer-banner {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 13px;
+}
+.offer-svg-passive {
+  fill: rgba(17, 17, 17, 0.1);
+}
+.offer-svg-active {
+  order: 0;
+  fill: var(--orange);
+}
+.offer-svg-passive1 {
+  order: 1;
+}
+.offer-svg-passive2 {
+  order: 2;
+}
+.offer-svg-passive3 {
+  order: 3;
+}
+.offer-svg-passive4 {
+  order: 4;
+}
+.offer-svg-passive5 {
+  order: 5;
+}
+.offer-svg-passive6 {
+  order: 6;
+}
+.offer-svg-passive7 {
+  order: 7;
+}
 @media screen and (min-width: 768px) {
+  .products-title {
+    margin-bottom: 50px;
+  }
   .products-field {
     display: flex;
     flex-direction: row;
