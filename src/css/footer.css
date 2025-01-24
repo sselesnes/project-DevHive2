@@ -1,2 +1,52 @@
+/* #region footer */
 .footer {
+    background-color: #1e1823;
 }
+
+.container {}
+
+.footer-logo {}
+
+.logo-orange {}
+
+.footer-contact-block {}
+
+.footer-contacts-container {}
+
+.footer-contacts-title {}
+
+.footer-contacts {}
+
+.footer-contacts-list {}
+
+.footer-contacts-item {}
+
+.footer-contacts-link {}
+
+.footer-social-container {}
+
+.footer-icons-list {}
+
+.footer-icon-link {
+    
+}
+
+.footer-icon-svg {
+    display: block;
+    stroke: #fff;
+    fill: #000;
+}
+
+.footer-nav-container {}
+
+.footer-nav {}
+
+.footer-nav-list {}
+
+.footrer-nav-item {}
+/* #endregion */
+
+
+/* .footer {
+    background-color: #1e1823;
+} */
