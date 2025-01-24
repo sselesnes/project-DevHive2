@@ -1,6 +1,7 @@
 /* #region footer */
 .footer {
     background-color: #1e1823;
+    color: var(--white);
 }
 
 .container {}
