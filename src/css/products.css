@@ -16,7 +16,7 @@
 .products-field {
   display: flex;
   flex-direction: row;
-  column-gap: 18px;
+  column-gap: 22px;
   transition: transform 0.3s ease;
   will-change: transform;
 }

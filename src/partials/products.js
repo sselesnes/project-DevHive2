@@ -6,11 +6,11 @@ let activeIndex = 0;
 function calculateCardWidth() {
   const viewportWidth = window.innerWidth;
   if (viewportWidth >= 1200) {
-    return 270 + 18;
+    return 270 + 18 + 4;
   } else if (viewportWidth >= 768) {
-    return 270 + 18;
+    return 270 + 18 + 4;
   } else {
-    return 335 + 18;
+    return 335 + 18 + 4;
   }
 }
 
