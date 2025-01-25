@@ -1,57 +1,71 @@
 const svgIcons = document.querySelectorAll('.offer-svg');
-const cardDisplay = document.querySelectorAll('.products-card');
+const cardField = document.querySelector('.products-field');
+const cards = document.querySelectorAll('.products-card');
+let activeIndex = 0;
 
-function updateCardDisplay(activeIndex) {
+function calculateCardWidth() {
   const viewportWidth = window.innerWidth;
-  let visibleCardsCount;
-
   if (viewportWidth >= 1200) {
-    visibleCardsCount = 4;
+    return 270 + 18;
   } else if (viewportWidth >= 768) {
-    visibleCardsCount = 3;
+    return 270 + 18;
   } else {
-    visibleCardsCount = 1;
+    return 335 + 18;
   }
+}
 
-  cardDisplay.forEach((card, index) => {
-    if (index >= activeIndex && index < activeIndex + visibleCardsCount) {
-      card.style.display = 'flex';
-    } else {
-      card.style.display = 'none';
+function updateCardDisplay(index) {
+  activeIndex = index;
+  const cardWidth = calculateCardWidth();
+  const offset = -activeIndex * cardWidth;
+  cardField.style.transform = `translateX(${offset}px)`;
+
+  svgIcons.forEach((svg, i) => {
+    const useElement = svg.querySelector('use');
+    if (useElement) {
+      if (i === activeIndex) {
+        useElement.setAttribute('href', '#icon-rectangle');
+        svg.style.width = '28px';
+        svg.style.height = '13px';
+        svg.style.fill = '#FD9222';
+      } else {
+        useElement.setAttribute('href', '#icon-ellipse');
+        svg.style.width = '13px';
+        svg.style.height = '13px';
+        svg.style.fill = 'rgba(17, 17, 17, 0.1)';
+      }
     }
   });
 }
-updateCardDisplay(0);
+
+let startX = 0;
+let endX = 0;
+
+document.querySelector('.products').addEventListener('touchstart', e => {
+  startX = e.touches[0].clientX;
+});
+
+document.querySelector('.products').addEventListener('touchend', e => {
+  endX = e.changedTouches[0].clientX;
+  const swipeDistance = endX - startX;
+
+  if (Math.abs(swipeDistance) > 50) {
+    if (swipeDistance < 0 && activeIndex < cards.length - 1) {
+      updateCardDisplay(activeIndex + 1);
+    } else if (swipeDistance > 0 && activeIndex > 0) {
+      updateCardDisplay(activeIndex - 1);
+    }
+  }
+});
 
 svgIcons.forEach((svg, index) => {
-  svg.addEventListener('mouseenter', () => {
-    const useElement = svg.querySelector('use');
-    if (useElement) {
-      useElement.setAttribute('href', '#icon-rectangle');
-      svg.style.width = '28px';
-      svg.style.height = '13px';
-      svg.style.fill = '#FD9222';
-    }
-
-    svgIcons.forEach((icon, i) => {
-      if (icon !== svg) {
-        const useElementOther = icon.querySelector('use');
-        if (useElementOther) {
-          useElementOther.setAttribute('href', '#icon-ellipse');
-        }
-        icon.style.width = '13px';
-        icon.style.height = '13px';
-        icon.style.fill = 'rgba(17, 17, 17, 0.1)';
-      }
-    });
+  svg.addEventListener('click', () => {
     updateCardDisplay(index);
   });
 });
 
 window.addEventListener('resize', () => {
-  const activeIndex = Array.from(svgIcons).findIndex(svg => {
-    const useElement = svg.querySelector('use');
-    return useElement && useElement.getAttribute('href') === '#icon-rectangle';
-  });
-  updateCardDisplay(activeIndex !== -1 ? activeIndex : 0);
+  updateCardDisplay(activeIndex);
 });
+
+updateCardDisplay(activeIndex);
