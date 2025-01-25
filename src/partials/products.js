@@ -1,7 +1,6 @@
 const svgIcons = document.querySelectorAll('.offer-svg');
 const cardField = document.querySelector('.products-field');
 const cards = document.querySelectorAll('.products-card');
-const products = document.querySelector('.products');
 let activeIndex = 0;
 let startX = 0;
 
@@ -43,11 +42,11 @@ function updateCardDisplay(index) {
   svgReskin();
 }
 
-products.addEventListener('touchstart', function (touchEvent) {
+cardField.addEventListener('touchstart', function (touchEvent) {
   startX = touchEvent.touches[0].clientX;
 });
 
-products.addEventListener('touchend', function (touchEvent) {
+cardField.addEventListener('touchend', function (touchEvent) {
   const swipeDistance = touchEvent.changedTouches[0].clientX - startX;
   let swipeStep = getSwipeStep();
 
