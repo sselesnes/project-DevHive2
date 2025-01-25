@@ -3,12 +3,12 @@ const cardField = document.querySelector('.products-field');
 const cards = document.querySelectorAll('.products-card');
 let activeIndex = 0;
 
-const calculateCardWidth = () => {
+function calculateCardWidth() {
   const viewportWidth = window.innerWidth;
   return viewportWidth >= 768 ? 292 : 357;
-};
+}
 
-const updateSvgStyles = () => {
+function updateSvgStyles() {
   svgIcons.forEach((svg, index) => {
     const useElement = svg.querySelector('use');
     if (!useElement) return;
@@ -22,14 +22,14 @@ const updateSvgStyles = () => {
     svg.style.height = isActive ? '13px' : '13px';
     svg.style.fill = isActive ? '#FD9222' : 'rgba(17, 17, 17, 0.1)';
   });
-};
+}
 
-const updateCardDisplay = index => {
+function updateCardDisplay(index) {
   activeIndex = index;
   const offset = -activeIndex * calculateCardWidth();
   cardField.style.transform = `translateX(${offset}px)`;
   updateSvgStyles();
-};
+}
 
 svgIcons.forEach((svg, index) => {
   svg.addEventListener('mouseover', () => {
@@ -38,7 +38,6 @@ svgIcons.forEach((svg, index) => {
 });
 
 let startX = 0;
-
 document
   .querySelector('.products')
   .addEventListener('touchstart', touchEvent => {
