@@ -3,52 +3,48 @@ const cardField = document.querySelector('.products-field');
 const cards = document.querySelectorAll('.products-card');
 let activeIndex = 0;
 
-function calculateCardWidth() {
+const calculateCardWidth = () => {
   const viewportWidth = window.innerWidth;
-  if (viewportWidth >= 1200) {
-    return 270 + 18 + 4;
-  } else if (viewportWidth >= 768) {
-    return 270 + 18 + 4;
-  } else {
-    return 335 + 18 + 4;
-  }
-}
+  return viewportWidth >= 768 ? 292 : 357;
+};
 
-function updateCardDisplay(index) {
-  activeIndex = index;
-  const cardWidth = calculateCardWidth();
-  const offset = -activeIndex * cardWidth;
-  cardField.style.transform = `translateX(${offset}px)`;
-
-  svgIcons.forEach((svg, i) => {
+const updateSvgStyles = () => {
+  svgIcons.forEach((svg, index) => {
     const useElement = svg.querySelector('use');
-    if (useElement) {
-      if (i === activeIndex) {
-        useElement.setAttribute('href', '#icon-rectangle');
-        svg.style.width = '28px';
-        svg.style.height = '13px';
-        svg.style.fill = '#FD9222';
-      } else {
-        useElement.setAttribute('href', '#icon-ellipse');
-        svg.style.width = '13px';
-        svg.style.height = '13px';
-        svg.style.fill = 'rgba(17, 17, 17, 0.1)';
-      }
-    }
+    if (!useElement) return;
+
+    const isActive = index === activeIndex;
+    useElement.setAttribute(
+      'href',
+      isActive ? '#icon-rectangle' : '#icon-ellipse'
+    );
+    svg.style.width = isActive ? '28px' : '13px';
+    svg.style.height = isActive ? '13px' : '13px';
+    svg.style.fill = isActive ? '#FD9222' : 'rgba(17, 17, 17, 0.1)';
   });
-}
+};
+
+const updateCardDisplay = index => {
+  activeIndex = index;
+  const offset = -activeIndex * calculateCardWidth();
+  cardField.style.transform = `translateX(${offset}px)`;
+  updateSvgStyles();
+};
+
+svgIcons.forEach((svg, index) => {
+  svg.addEventListener('mouseover', () => {
+    updateCardDisplay(index);
+  });
+});
 
 let startX = 0;
-let endX = 0;
 
 document.querySelector('.products').addEventListener('touchstart', e => {
   startX = e.touches[0].clientX;
 });
 
 document.querySelector('.products').addEventListener('touchend', e => {
-  endX = e.changedTouches[0].clientX;
-  const swipeDistance = endX - startX;
-
+  const swipeDistance = e.changedTouches[0].clientX - startX;
   if (Math.abs(swipeDistance) > 50) {
     if (swipeDistance < 0 && activeIndex < cards.length - 1) {
       updateCardDisplay(activeIndex + 1);
@@ -58,14 +54,6 @@ document.querySelector('.products').addEventListener('touchend', e => {
   }
 });
 
-svgIcons.forEach((svg, index) => {
-  svg.addEventListener('click', () => {
-    updateCardDisplay(index);
-  });
-});
-
-window.addEventListener('resize', () => {
-  updateCardDisplay(activeIndex);
-});
+window.addEventListener('resize', () => updateCardDisplay(activeIndex));
 
 updateCardDisplay(activeIndex);
