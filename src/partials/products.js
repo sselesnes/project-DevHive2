@@ -31,9 +31,8 @@ function svgReskin() {
       'href',
       isActive ? '#icon-rectangle' : '#icon-ellipse'
     );
-    svg.style.width = isActive ? '28px' : '13px';
-    svg.style.height = '13px';
     svg.style.fill = isActive ? '#FD9222' : 'rgba(17, 17, 17, 0.1)';
+    svg.style.width = isActive ? '28px' : '13px';
   });
 }
 
@@ -68,7 +67,5 @@ products.addEventListener('touchend', function (touchEvent) {
 });
 
 svgHover();
+window.addEventListener('resize', () => updateCardDisplay(activeIndex));
 updateCardDisplay(activeIndex);
-window.addEventListener('resize', function () {
-  updateCardDisplay(activeIndex);
-});
