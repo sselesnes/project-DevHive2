@@ -28,7 +28,8 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   background: #fff;
-  min-width: calc(100vw - 40px);
+  max-width: 335px;
+  width: calc(100vw - 40px);
   transition: transform 0.3s ease;
   flex-shrink: 0;
 }
@@ -89,6 +90,7 @@
     margin-bottom: 50px;
   }
   .products-card {
+    max-width: 0;
     min-width: 270px;
   }
 }
