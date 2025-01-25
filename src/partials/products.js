@@ -39,12 +39,14 @@ svgIcons.forEach((svg, index) => {
 
 let startX = 0;
 
-document.querySelector('.products').addEventListener('touchstart', e => {
-  startX = e.touches[0].clientX;
-});
+document
+  .querySelector('.products')
+  .addEventListener('touchstart', touchEvent => {
+    startX = touchEvent.touches[0].clientX;
+  });
 
-document.querySelector('.products').addEventListener('touchend', e => {
-  const swipeDistance = e.changedTouches[0].clientX - startX;
+document.querySelector('.products').addEventListener('touchend', touchEvent => {
+  const swipeDistance = touchEvent.changedTouches[0].clientX - startX;
   if (Math.abs(swipeDistance) > 50) {
     if (swipeDistance < 0 && activeIndex < cards.length - 1) {
       updateCardDisplay(activeIndex + 1);
