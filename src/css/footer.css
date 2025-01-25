@@ -80,13 +80,14 @@
     width: 58px;
     height: 22px;
     align-items: center;
+    justify-content: center;
     gap: 14px;
 }
 
 .footer-icon-svg {
   display: block;
   stroke: #fff;
-  fill: #000;
+  fill: transparent;
 }
 
 .line {
