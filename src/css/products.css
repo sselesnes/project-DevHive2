@@ -88,6 +88,9 @@
   .products-title {
     margin-bottom: 50px;
   }
+  .products-card {
+    min-width: 270px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
