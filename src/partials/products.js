@@ -1,5 +1,5 @@
 const svgIcons = document.querySelectorAll('.offer-svg');
-const cardList = document.querySelector('.products-list');
+const cardList = document.querySelector('.product-list');
 const cards = document.querySelectorAll('.product-card');
 let activeIndex = 0;
 let startX = 0;

@@ -13,7 +13,7 @@
 .products-title-span {
   color: var(--orange);
 }
-.products-list {
+.product-list {
   display: flex;
   flex-direction: row;
   column-gap: 22px;
