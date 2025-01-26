@@ -35,7 +35,7 @@
 .benefit-icon {
   fill: var(--orange);
 }
-.benefits-subtitle {
+.benefit-subtitle {
   color: var(--white-pure);
   font-size: 18px;
   font-style: normal;
@@ -44,7 +44,7 @@
   margin-top: 22px;
   margin-bottom: 18px;
 }
-.benefits-text {
+.benefit-text {
   color: var(--white-translucent);
   font-size: 14px;
   font-style: normal;
