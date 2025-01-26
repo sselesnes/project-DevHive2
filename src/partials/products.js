@@ -1,6 +1,6 @@
 const svgIcons = document.querySelectorAll('.offer-svg');
-const cardField = document.querySelector('.products-field');
-const cards = document.querySelectorAll('.products-card');
+const cardList = document.querySelector('.products-list');
+const cards = document.querySelectorAll('.product-card');
 let activeIndex = 0;
 let startX = 0;
 
@@ -38,15 +38,19 @@ function svgReskin() {
 function updateCardDisplay(index) {
   activeIndex = index;
   const offset = -activeIndex * calculateCardWidth();
-  cardField.style.transform = `translateX(${offset}px)`;
+  cardList.style.transform = `translateX(${offset}px)`;
   svgReskin();
 }
 
-cardField.addEventListener('touchstart', function (touchEvent) {
-  startX = touchEvent.touches[0].clientX;
-});
+cardList.addEventListener(
+  'touchstart',
+  function (touchEvent) {
+    startX = touchEvent.touches[0].clientX;
+  },
+  { passive: true }
+);
 
-cardField.addEventListener('touchend', function (touchEvent) {
+cardList.addEventListener('touchend', function (touchEvent) {
   const swipeDistance = touchEvent.changedTouches[0].clientX - startX;
   let swipeStep = getSwipeStep();
 

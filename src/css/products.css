@@ -13,14 +13,14 @@
 .products-title-span {
   color: var(--orange);
 }
-.products-field {
+.products-list {
   display: flex;
   flex-direction: row;
   column-gap: 22px;
   transition: transform 0.3s ease;
   will-change: transform;
 }
-.products-card {
+.product-card {
   padding: 32px 0;
   display: flex;
   flex-direction: column;
@@ -89,7 +89,7 @@
   .products-title {
     margin-bottom: 50px;
   }
-  .products-card {
+  .product-card {
     max-width: 0;
     min-width: 270px;
   }
