@@ -75,7 +75,6 @@
   }
 
   .benefits-list {
-    /* flex-wrap: nowrap; */
     column-gap: 70px;
   }
   .benefit-item {
