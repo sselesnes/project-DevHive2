@@ -40,7 +40,6 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
   margin-top: 22px;
   margin-bottom: 18px;
 }
@@ -49,7 +48,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.22;
   letter-spacing: -0.28px;
   max-width: 308px;
 }
