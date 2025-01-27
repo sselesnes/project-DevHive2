@@ -99,7 +99,8 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   border-radius: 15px;
-  width: 311px;
+  max-width: 311px;
+  width: 100vw;
 }
 
 .adv_menu-img {
@@ -253,7 +254,7 @@
   }
 
   .adv_menu {
-    width: 538px;
+    max-width: 538px;
   }
 
   .adv_menu-img {
