@@ -33,6 +33,17 @@ function updateSvgStyles() {
     svg.style.fill = isActive ? '#FD9222' : 'rgba(17, 17, 17, 0.1)';
     svg.style.width = isActive ? '28px' : '13px';
     svg.style.transform = isActive ? 'scale(1.15)' : 'scale(1.0)';
+    if (isActive) {
+      setTimeout(() => {
+        postSvgStyles(svg);
+      }, 200);
+    }
+  });
+}
+
+function postSvgStyles() {
+  svgIcons.forEach((svg, index) => {
+    svg.style.transform = 'scale(1.0)';
   });
 }
 
