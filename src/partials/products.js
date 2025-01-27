@@ -2,7 +2,6 @@ const svgIcons = document.querySelectorAll('.offer-svg');
 const cardList = document.querySelector('.product-list');
 const cards = document.querySelectorAll('.product-card');
 let activeIndex = 0;
-let startX = 0;
 
 function calculateCardWidth() {
   return window.innerWidth >= 768 ? 292 : 357;
@@ -13,15 +12,13 @@ function getSwipeStep() {
 }
 
 function svgHover() {
-  svgIcons.forEach(function (svg, index) {
-    svg.addEventListener('mouseover', function () {
-      updateCardDisplay(index);
-    });
+  svgIcons.forEach((svg, index) => {
+    svg.addEventListener('mouseover', () => updateCardDisplay(index));
   });
 }
 
 function svgReskin() {
-  svgIcons.forEach(function (svg, index) {
+  svgIcons.forEach((svg, index) => {
     const useElement = svg.querySelector('use');
     if (!useElement) return;
 
@@ -42,33 +39,28 @@ function updateCardDisplay(index) {
   svgReskin();
 }
 
-cardList.addEventListener(
-  'touchstart',
-  function (touchEvent) {
-    startX = touchEvent.touches[0].clientX;
-  },
-  { passive: true }
-);
+function handleTouch(event) {
+  if (event.type === 'touchstart') {
+    startX = event.touches[0].clientX;
+  } else if (event.type === 'touchend') {
+    const swipeDistance = event.changedTouches[0].clientX - startX;
+    handleSwipe(swipeDistance);
+  }
+}
 
-cardList.addEventListener('touchend', function (touchEvent) {
-  const swipeDistance = touchEvent.changedTouches[0].clientX - startX;
-  let swipeStep = getSwipeStep();
-
+function handleSwipe(swipeDistance) {
+  const swipeStep = getSwipeStep();
   if (Math.abs(swipeDistance) > 50) {
     if (swipeDistance < 0 && activeIndex < cards.length - 1) {
-      if (activeIndex + swipeStep >= cards.length) {
-        swipeStep = 1;
-      }
-      updateCardDisplay(activeIndex + swipeStep);
+      updateCardDisplay(Math.min(activeIndex + swipeStep, cards.length - 1));
     } else if (swipeDistance > 0 && activeIndex > 0) {
-      if (activeIndex - swipeStep < 0) {
-        swipeStep = 1;
-      }
-      updateCardDisplay(activeIndex - swipeStep);
+      updateCardDisplay(Math.max(activeIndex - swipeStep, 0));
     }
   }
-});
+}
 
 svgHover();
+cardList.addEventListener('touchstart', handleTouch, { passive: true });
+cardList.addEventListener('touchend', handleTouch);
 window.addEventListener('resize', () => updateCardDisplay(activeIndex));
 updateCardDisplay(activeIndex);
