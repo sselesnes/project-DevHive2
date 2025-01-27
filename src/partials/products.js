@@ -1,14 +1,11 @@
 const svgIcons = document.querySelectorAll('.slider-icon');
 const cardList = document.querySelector('.product-list');
-const cards = document.querySelectorAll('.product-card');
+let cards = Array.from(document.querySelectorAll('.product-card'));
 let activeIndex = 0;
+let startX = 0;
 
 function calculateCardWidth() {
   return window.innerWidth >= 768 ? 292 : 357;
-}
-
-function getSwipeStep() {
-  return window.innerWidth >= 768 ? 2 : 1;
 }
 
 function eventSvgHover() {
@@ -61,23 +58,50 @@ function handleTouch(event) {
     handleSwipe(swipeDistance);
   }
 }
-
 function handleSwipe(swipeDistance) {
-  const swipeStep = getSwipeStep();
+  const cardWidth = calculateCardWidth();
+
+  // Обчислюємо кількість карток, які потрібно просунути
+  const swipeStep = Math.round(Math.abs(swipeDistance) / cardWidth);
+
   if (Math.abs(swipeDistance) > 50) {
-    if (swipeDistance < 0 && activeIndex < cards.length - 1) {
-      updateCardDisplay(Math.min(activeIndex + swipeStep, cards.length - 1));
+    if (swipeDistance < 0) {
+      // Перехід вперед
+      updateCardDisplay((activeIndex + swipeStep) % cards.length);
       updateSvgStyles();
-    } else if (swipeDistance > 0 && activeIndex > 0) {
-      updateCardDisplay(Math.max(activeIndex - swipeStep, 0));
+    } else if (swipeDistance > 0) {
+      // Перехід назад
+      updateCardDisplay(
+        (activeIndex - swipeStep + cards.length) % cards.length
+      );
       updateSvgStyles();
     }
   }
+}
+
+function initializeCards() {
+  const cardWidth = calculateCardWidth();
+  const visibleCards = Math.floor(window.innerWidth / cardWidth);
+  const totalCards = cards.length;
+
+  // Clone cards to create infinite scroll effect
+  for (let i = 0; i < visibleCards; i++) {
+    cards.forEach(card => {
+      cardList.appendChild(card.cloneNode(true));
+    });
+  }
+
+  // Adjust the initial position to show the first set of cards
+  updateCardDisplay(activeIndex);
 }
 
 cardList.addEventListener('touchstart', handleTouch, { passive: true });
 cardList.addEventListener('touchend', handleTouch);
 eventSvgHover();
 updateSvgStyles();
-window.addEventListener('resize', () => updateCardDisplay(activeIndex));
+window.addEventListener('resize', () => {
+  initializeCards();
+  updateCardDisplay(activeIndex);
+});
+initializeCards();
 updateCardDisplay(activeIndex);
