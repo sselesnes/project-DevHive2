@@ -11,7 +11,7 @@ function getSwipeStep() {
   return window.innerWidth >= 768 ? 2 : 1;
 }
 
-function setupSvgHover() {
+function eventSvgHover() {
   svgIcons.forEach((svg, index) => {
     svg.addEventListener('mouseover', () => {
       updateCardDisplay(index);
@@ -77,7 +77,7 @@ function handleSwipe(swipeDistance) {
 
 cardList.addEventListener('touchstart', handleTouch, { passive: true });
 cardList.addEventListener('touchend', handleTouch);
-setupSvgHover();
+eventSvgHover();
 updateSvgStyles();
 window.addEventListener('resize', () => updateCardDisplay(activeIndex));
 updateCardDisplay(activeIndex);
