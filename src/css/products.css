@@ -73,14 +73,14 @@
   text-align: center;
   color: var(--black);
 }
-.offer-banner {
+.carousel-controls {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   column-gap: 13px;
 }
-.offer-svg {
+.slider-icon {
   fill: rgba(17, 17, 17, 0.1);
   transition: transform 0.3s ease;
 }

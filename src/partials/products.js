@@ -1,8 +1,7 @@
-const svgIcons = document.querySelectorAll('.offer-svg');
+const svgIcons = document.querySelectorAll('.slider-icon');
 const cardList = document.querySelector('.product-list');
 const cards = document.querySelectorAll('.product-card');
 let activeIndex = 0;
-let startX = 0;
 
 function calculateCardWidth() {
   return window.innerWidth >= 768 ? 292 : 357;
