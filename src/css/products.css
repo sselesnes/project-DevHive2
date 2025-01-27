@@ -44,17 +44,16 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px;
   letter-spacing: -0.36px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 2px;
 }
 .product-type {
   color: rgba(17, 17, 17, 0.7);
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 14px;
   letter-spacing: -0.24px;
   text-align: center;
   margin-bottom: 18px;
