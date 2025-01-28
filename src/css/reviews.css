@@ -58,6 +58,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
+  padding-top: 56px;
 }
 
 .rev-text {
@@ -69,6 +70,9 @@
   font-weight: 400;
   line-height: 18px; /* 128.571% */
   letter-spacing: -0.28px;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .btn-reviews {
