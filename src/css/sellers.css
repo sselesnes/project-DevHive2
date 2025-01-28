@@ -1,2 +1,12 @@
 .sellers {
 }
+.sellers-title {
+  color: var(--orange);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+}
+.sellers-title-span {
+  color: var(--black);
+}
