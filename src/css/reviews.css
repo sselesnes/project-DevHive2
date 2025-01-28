@@ -1,25 +1,57 @@
 .reviews {
+  width: 1200px;
 }
 
 .rev-head-span {
   color: #fd9222;
+
   text-align: center;
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 120% */
-  letter-spacing: -0.6px;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.72px;
   text-transform: uppercase;
 }
 
 .reviews-heading {
   text-align: center;
+  margin-bottom: 90px;
+  color: #111;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+
+.rev-card-list {
+  display: flex;
+  gap: 28px;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 360px;
+  height: 200px;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fff;
+  box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
+}
+
+.rev-img {
+  position: absolute;
+  top: -40px;
+  left: 140px;
 }
 
 .rev-name {
   color: #111;
-
   text-align: center;
   font-family: Montserrat;
   font-size: 18px;
