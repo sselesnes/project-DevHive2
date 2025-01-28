@@ -77,7 +77,6 @@ function handleSwipe(swipeDistance) {
 function initializeCards() {
   const cardWidth = calculateCardWidth();
   const visibleCards = Math.floor(window.innerWidth / cardWidth);
-  const totalCards = cards.length;
 
   for (let i = 0; i < visibleCards; i++) {
     cards.forEach(card => {
