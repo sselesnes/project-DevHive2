@@ -1,2 +1,133 @@
-.footer {
+.ingredients {
+    padding: 20px 32px;
+}
+.container {
+    width: 375px;
+    height: 7206px;
+    background: #FAFAFA;
+}
+.block-titel {
+    display: flex;
+    width: 335px;
+    height: 204px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+}
+.titel-ingredients {
+    width: 283px;
+    height: 72px;
+    flex-shrink: 0;
+    color: #111;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 120% */
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+}
+.span-titel {
+    color: #FD9222;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+}
+.description {
+    color: #111;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.28px;
+}
+.ingredients-grid {
+    display: flex;
+    width: 335px;
+    height: 1140px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+}
+.ingredients-chokolate {
+    border-radius: 15px;
+    background: #FD9222;
+    width: 335px;
+    height: 270px;
+    gap: 0px;
+    border-radius: 15px 0px 0px 0px;
+    opacity: 0px;
+}
+.text-chokolate {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+}
+.ingredients-milk {
+    width: 335px;
+    height: 270px;
+    gap: 0px;
+    border-radius: 15px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #FD9222;
+    background: #FFF;
+}
+.text-milk {
+    color: #111;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+}
+.ingredients-nuts {
+    border-radius: 15px;
+    background: #1E1823;
+}
+.text-nuts {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+}
+.ingredients-chokolate-drops {
+    border-radius: 15px;
+    border: 1px solid #FD9222;
+    background: #FFF;
+}
+.text-chokolate-drops {
+    color: #111;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
 }
