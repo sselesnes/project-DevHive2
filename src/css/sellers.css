@@ -1,4 +1,5 @@
 .sellers {
+  margin-bottom: 72px;
 }
 .top-sellers-title {
   color: var(--orange);
@@ -15,6 +16,7 @@
 .top-sellers-gallery {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   row-gap: 20px;
   margin: 0;
 }
@@ -25,24 +27,40 @@
   font-weight: 400;
   line-height: 18px; /* 128.571% */
   letter-spacing: -0.28px;
-  margin-right: 29px;
+  /* margin-right: 29px; */
+  max-width: 306px;
   order: 2;
 }
 .top-sellers-gallery picture:nth-child(2) {
   order: 3;
 }
-
+.top-sellers-gallery-buynow {
+  order: 4;
+}
 .top-sellers-gallery picture:nth-child(3),
 .top-sellers-gallery picture:nth-child(4) {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  .top-sellers-gallery > * {
-    order: 0;
-    display: block;
+  .sellers {
+    margin-bottom: 100px;
+  }
+  .top-sellers-gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 16px;
+  }
+  .top-sellers-chocolate-fact {
+    order: 3;
+  }
+  .top-sellers-chocolate-fact {
+    margin: 0;
   }
 }
-.top-sellers-gallery picture:nth-child(4) {
-  display: none;
+
+@media only screen and (min-width: 1200px) {
+  .sellers {
+    margin-bottom: 128px;
+  }
 }
