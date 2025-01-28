@@ -42,6 +42,7 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   background: #fff;
   box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
+  margin-bottom: 32px;
 }
 
 .rev-img {
@@ -75,22 +76,19 @@
   padding-right: 24px;
 }
 
+.reviews-swipe {
+}
+
+.review-button-div {
+  display: flex;
+  align-items: center;
+}
+
 .btn-reviews {
   display: flex;
   padding: 12px 28px;
-  align-items: flex-start;
+  align-items: center;
   gap: 14px;
   border-radius: 100px;
   border: 1px solid #fd9222;
-}
-
-.review-btn-text {
-  color: #111;
-
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
 }
