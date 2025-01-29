@@ -1,3 +1,6 @@
+:root {
+  --white-pure: #fff;
+}
 /* #region top-sellers-modal */
 .top-sellers-modal-title {
   margin-bottom: 32px;
@@ -13,12 +16,8 @@
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
-  background-color: #ccc;
-  transition: opacity 250ms var(--cubic-bezier),
-    visibility 250ms var(--cubic-bezier);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--white-pure);
+  background-color: skyblue;
 }
 
 .top-sellers-modal.is-open {
@@ -37,43 +36,61 @@
   transition: transform 250ms var(--cubic-bezier);
   margin: 32px 0;
   padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.form-close-button {
+.top-sellers-modal-close {
+  position: absolute;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
-  background-color: #e7e9fc;
-  border: 1px solid #0000001a;
-  top: 24px;
-  right: 24px;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+  stroke: var(--black);
+}
+.top-sellers-modal-close:hover,
+.form-close-button:focus:focus {
+  stroke: var(--orange);
+}
+
+.top-sellers-modal-buy-list {
   display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.top-sellers-modal-buy-item {
+  width: 263px;
+  height: 85px;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: var(--white-pure);
+  display: inline-flex;
+  padding: 8px 16px;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  position: absolute;
-  padding: 0;
-  transition: background-color 250ms var(--cubic-bezier),
-    border 250ms var(--cubic-bezier);
+  justify-content: space-between;
 }
 
-.form-close-button .form-icon-close {
-  fill: #2e2f42;
-  transition-property: fill;
-  transition-timing-function: var(--cubic-bezier);
-  transition-duration: 250ms;
+.top-sellers-modal-buy-item-weight-tag {
+  width: 70px;
+  height: 29px;
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: var(--white);
+  color: var(--black);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
 }
-
-.form-close-button:hover .form-icon-close,
-.form-close-button:focus .form-icon-close {
-  fill: #fff;
-}
-
-.form-close-button:hover,
-.form-close-button:focus {
-  background-color: #404bbf;
-  border: none;
-}
+/* .top-sellers-modal-buy-item-img {
+  width: 84px;
+  height: 69px;
+} */
 
 /* #endregion top-sellers-modal */
 .sellers {
