@@ -1,6 +1,10 @@
 :root {
   --white-pure: #fff;
 }
+.sellers {
+  margin-bottom: 72px;
+  background-color: var(--white);
+}
 /* #region top-sellers-modal */
 .top-sellers-modal-title {
   margin-bottom: 32px;
@@ -21,7 +25,7 @@
   opacity: 0;
   visibility: hidden;
   padding: 32px 24px;
-  background-color: var(--white-pure);
+  background-color: var(--white);
 }
 
 .top-sellers-modal.is-open {
@@ -74,6 +78,7 @@ body.modal-open::before {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
+  margin-bottom: 32px;
 }
 .top-sellers-modal-buy-item {
   width: 263px;
@@ -104,9 +109,7 @@ body.modal-open::before {
 }
 
 /* #endregion top-sellers-modal */
-.sellers {
-  margin-bottom: 72px;
-}
+
 .top-sellers-title,
 .top-sellers-modal-title {
   color: var(--orange);
