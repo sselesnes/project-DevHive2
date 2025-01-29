@@ -35,7 +35,7 @@
 .review-card {
   display: flex;
   flex-direction: column;
-  position: relative;
+
   width: 360px;
   height: 200px;
   border-radius: 15px;
@@ -46,9 +46,8 @@
 }
 
 .rev-img {
-  position: absolute;
-  top: -40px;
-  left: 140px;
+  transform: translate(0, -50%);
+  align-self: center;
 }
 
 .rev-name {
@@ -59,7 +58,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
-  padding-top: 56px;
+  margin-top: 18px;
 }
 
 .rev-text {
@@ -71,9 +70,6 @@
   font-weight: 400;
   line-height: 18px; /* 128.571% */
   letter-spacing: -0.28px;
-  padding-top: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .reviews-swipe {
