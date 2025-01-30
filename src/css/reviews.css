@@ -10,7 +10,6 @@
 
 .reviews-heading {
   text-align: center;
-  margin-bottom: 90px;
   color: #111;
   font-size: 24px;
   font-style: normal;
@@ -18,6 +17,7 @@
   line-height: 28px;
   letter-spacing: -0.72px;
   text-transform: uppercase;
+  margin-bottom: 72px;
 }
 
 .rev-card-list {
@@ -28,13 +28,14 @@
 .review-card {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 335px;
   height: 200px;
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   background: #fff;
   box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .review-card:nth-child(2),
@@ -45,6 +46,7 @@
 .rev-img {
   transform: translate(0, -50%);
   align-self: center;
+  position: absolute;
 }
 
 .rev-name {
@@ -54,7 +56,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
-  margin-top: 18px;
+  /* margin-top: 18px; */
 }
 
 .rev-text {
@@ -71,6 +73,8 @@
 .rev-swipe-list {
   display: flex;
   justify-content: center;
+  gap: 13px;
+  margin-bottom: 32px;
 }
 
 .rev-swipe-item {
@@ -78,7 +82,7 @@
 
 .review-button-div {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .btn-reviews {
