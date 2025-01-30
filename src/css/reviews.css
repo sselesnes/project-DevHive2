@@ -1,6 +1,5 @@
 .rev-head-span {
   color: #fd9222;
-  text-align: center;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -64,9 +63,12 @@
   letter-spacing: -0.28px;
 }
 
-.reviews-swipe-list {
+.rev-swipe-list {
   display: flex;
-  align-items: center;
+  justify-content: center;
+}
+
+.rev-swipe-item {
 }
 
 .review-button-div {
