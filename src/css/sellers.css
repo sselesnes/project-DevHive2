@@ -2,7 +2,7 @@
   --white-pure: #fff;
 }
 .sellers {
-  margin-bottom: 72px;
+  padding-bottom: 72px;
   background-color: var(--white);
 }
 /* #region top-sellers-modal */
@@ -271,7 +271,7 @@ body.modal-open::before {
 
 @media only screen and (min-width: 768px) {
   .sellers {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
   .top-sellers-gallery {
     flex-direction: row;
@@ -297,7 +297,7 @@ body.modal-open::before {
 
 @media only screen and (min-width: 1200px) {
   .sellers {
-    margin-bottom: 128px;
+    padding-bottom: 128px;
   }
   .top-sellers-gallery {
     row-gap: 32px;
