@@ -1,5 +1,5 @@
 .discover {
-  margin-bottom: 72px;
+  padding-bottom: 72px;
   --white-pure: #fff;
 }
 .discover-title,
@@ -86,7 +86,7 @@
 @media (min-width: 768px) {
   .discover {
     padding: 0 77px;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
   .discover-title,
   .discover-title-span {
@@ -116,7 +116,7 @@
 @media (min-width: 1200px) {
   .discover {
     padding: 0 32px;
-    margin-bottom: 128px;
+    padding-bottom: 128px;
   }
   .discover-wrapper {
     display: flex;
