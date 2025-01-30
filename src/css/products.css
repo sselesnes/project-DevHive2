@@ -85,6 +85,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .products {
+    padding-bottom: 100px;
+  }
   .products-title {
     margin-bottom: 50px;
   }
@@ -95,5 +98,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  /* products.js */
+  .products {
+    padding-bottom: 128px;
+  }
 }
