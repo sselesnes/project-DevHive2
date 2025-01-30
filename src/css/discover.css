@@ -1,5 +1,6 @@
 .discover {
   margin-bottom: 72px;
+  --white-pure: #fff;
 }
 .discover-title {
   color: var(--black);
@@ -34,12 +35,14 @@
   align-items: center;
   fill: var(--white);
   left: 50%;
-  top: 25%;
+  top: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid white;
   border-radius: 50%;
 }
 .discover-benefits {
+  background-color: var(--white-pure);
+  border-radius: 15px;
   padding: 20px 14px;
 }
 .discover-benefits-title {
@@ -51,15 +54,23 @@
   margin-bottom: 20px;
 }
 .discover-benefits-list {
+  margin-left: 16px;
   display: flex;
   flex-direction: column;
   row-gap: 18px;
 }
 .discover-benefit-item {
+  position: relative;
   color: var(--black);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
+}
+.discover-benefit-item-dot {
+  position: absolute;
+  top: 9px;
+  left: -12px;
+  transform: translate(-50%, -50%);
 }
