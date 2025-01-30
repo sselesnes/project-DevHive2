@@ -263,111 +263,127 @@
         </p>
       </li>
     </ul>
+    <form>
+      <p class="top-sellers-modal-form-label">Personal information</p>
+      <div class="top-sellers-modal-input-fullname">
+        <label class="top-sellers-modal-input-label" for="name">
+          <input
+            class="top-sellers-modal-input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            pattern="^[A-Za-zА-Яа-яІіЇїЄєҐґ'’-]+$"
+            title="Ім'я повинно містити тільки літери"
+            required
+        /></label>
+        <label class="top-sellers-modal-input-label" for="surname">
+          <input
+            class="top-sellers-modal-input"
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="Surname"
+            pattern="^[A-Za-zА-Яа-яІіЇїЄєҐґ'’-]+$"
+            title="Прізвище повинно містити тільки літери"
+        /></label>
+      </div>
+      <p class="top-sellers-modal-form-label">Email</p>
+      <label class="top-sellers-modal-input-label" for="email">
+        <input
+          class="top-sellers-modal-input"
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          title="Введіть коректний email (наприклад, example@mail.com)"
+          required
+      /></label>
+      <p class="top-sellers-modal-form-label">Phone number</p>
+      <label class="top-sellers-modal-input-label" for="phone">
+        <div class="top-sellers-modal-input-prefix">
+          <svg
+            aria-hidden="true"
+            class="top-sellers-modal-input-phone-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 40 32"
+          >
+            <path
+              fill="gold"
+              d="M40.209.495H.307V30.19h39.902V.495z"
+              style="fill: var(--color1, #ffd700)"
+            />
+            <path
+              fill="#0057b7"
+              d="M.307.495h39.902v14.847H.307V.495z"
+              style="fill: var(--color2, #0057b7)"
+            />
+          </svg>
+          <p class="top-sellers-modal-input-phone-prefix">+380</p>
+        </div>
 
-    <p class="top-sellers-modal-form-label">Personal information</p>
-    <label class="top-sellers-modal-input-label" for="user-name">
-      <input
-        class="top-sellers-modal-input"
-        type="text"
-        name="user-name"
-        id="user-name"
-        placeholder="Name"
-    /></label>
-    <label class="top-sellers-modal-input-label" for="user-surname">
-      <input
-        class="top-sellers-modal-input"
-        type="text"
-        name="user-surname"
-        id="user-surname"
-        placeholder="Surname"
-    /></label>
-    <p class="top-sellers-modal-form-label">Email</p>
-    <label class="top-sellers-modal-input-label" for="user-email">
-      <input
-        class="top-sellers-modal-input"
-        type="text"
-        name="user-email"
-        id="user-email"
-        placeholder="Enter your email"
-    /></label>
-    <p class="top-sellers-modal-form-label">Phone number</p>
-    <label class="top-sellers-modal-input-label" for="user-phone">
-      <div class="top-sellers-modal-input-prefix">
+        <input
+          class="top-sellers-modal-input top-sellers-modal-input-phone"
+          type="text"
+          name="phone"
+          id="phone"
+          placeholder="Phone number"
+          pattern="^\d{9}$"
+          title="Формат телефону: xxxxxxxxx"
+          required
+      /></label>
+      <p class="top-sellers-modal-form-label">Card number</p>
+
+      <label class="top-sellers-modal-input-label" for="creditcard">
         <svg
           aria-hidden="true"
-          class="top-sellers-modal-input-phone-icon"
+          class="top-sellers-modal-input-creditcard-icon"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 40 32"
+          viewBox="0 0 50 32"
         >
           <path
-            fill="gold"
-            d="M40.209.495H.307V30.19h39.902V.495z"
-            style="fill: var(--color1, #ffd700)"
+            fill="#ed0006"
+            d="M25.143 28.078c-2.656 2.194-6.102 3.518-9.867 3.518C6.875 31.596.065 25.003.065 16.87S6.875 2.144 15.276 2.144c3.765 0 7.21 1.324 9.867 3.518 2.656-2.194 6.102-3.518 9.866-3.518 8.401 0 15.211 6.593 15.211 14.726s-6.81 14.726-15.211 14.726c-3.765 0-7.21-1.324-9.867-3.518z"
+            style="fill: var(--color1, #ed0006)"
           />
           <path
-            fill="#0057b7"
-            d="M.307.495h39.902v14.847H.307V.495z"
-            style="fill: var(--color2, #0057b7)"
+            fill="#f9a000"
+            d="M25.143 28.078c3.271-2.701 5.344-6.72 5.344-11.208s-2.074-8.507-5.344-11.208c2.656-2.194 6.102-3.518 9.866-3.518 8.401 0 15.211 6.593 15.211 14.726s-6.81 14.726-15.211 14.726c-3.765 0-7.21-1.324-9.867-3.518z"
+            style="fill: var(--color2, #f9a000)"
+          />
+          <path
+            fill="#ff5e00"
+            d="M25.143 28.078c3.271-2.701 5.344-6.72 5.344-11.208s-2.074-8.507-5.344-11.208c-3.271 2.701-5.344 6.72-5.344 11.208s2.074 8.507 5.344 11.208z"
+            style="fill: var(--color3, #ff5e00)"
           />
         </svg>
-        <p class="top-sellers-modal-input-phone-prefix">+380</p>
-      </div>
+        <input
+          class="top-sellers-modal-input top-sellers-modal-input-creditcard"
+          type="text"
+          name="creditcard"
+          id="creditcard"
+          placeholder="Enter card"
+          required
+          maxlength="16"
+          pattern="^\d{16}$"
+          title="Номер картки повинен містити 16 цифр"
+      /></label>
 
-      <input
-        class="top-sellers-modal-input top-sellers-modal-input-phone"
-        type="text"
-        name="user-phone"
-        id="user-phone"
-        placeholder="Phone number"
-    /></label>
-    <p class="top-sellers-modal-form-label">Card number</p>
+      <p class="top-sellers-modal-form-label">Comment</p>
+      <label class="top-sellers-modal-input-label" for="comment">
+        <textarea
+          class="top-sellers-modal-input top-sellers-modal-input-comment"
+          type="text"
+          name="comment"
+          id="comment"
+          placeholder="Enter text"
+          title="Коментар до замовлення"
+        ></textarea>
+      </label>
 
-    <label class="top-sellers-modal-input-label" for="user-creditcard">
-      <svg
-        aria-hidden="true"
-        class="top-sellers-modal-input-creditcard-icon"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 50 32"
-      >
-        <path
-          fill="#ed0006"
-          d="M25.143 28.078c-2.656 2.194-6.102 3.518-9.867 3.518C6.875 31.596.065 25.003.065 16.87S6.875 2.144 15.276 2.144c3.765 0 7.21 1.324 9.867 3.518 2.656-2.194 6.102-3.518 9.866-3.518 8.401 0 15.211 6.593 15.211 14.726s-6.81 14.726-15.211 14.726c-3.765 0-7.21-1.324-9.867-3.518z"
-          style="fill: var(--color1, #ed0006)"
-        />
-        <path
-          fill="#f9a000"
-          d="M25.143 28.078c3.271-2.701 5.344-6.72 5.344-11.208s-2.074-8.507-5.344-11.208c2.656-2.194 6.102-3.518 9.866-3.518 8.401 0 15.211 6.593 15.211 14.726s-6.81 14.726-15.211 14.726c-3.765 0-7.21-1.324-9.867-3.518z"
-          style="fill: var(--color2, #f9a000)"
-        />
-        <path
-          fill="#ff5e00"
-          d="M25.143 28.078c3.271-2.701 5.344-6.72 5.344-11.208s-2.074-8.507-5.344-11.208c-3.271 2.701-5.344 6.72-5.344 11.208s2.074 8.507 5.344 11.208z"
-          style="fill: var(--color3, #ff5e00)"
-        />
-      </svg>
-      <input
-        class="top-sellers-modal-input top-sellers-modal-input-creditcard"
-        type="text"
-        name="user-creditcard"
-        id="user-creditcard"
-        placeholder="Enter card"
-        maxlength="16"
-        pattern="\d{16}"
-    /></label>
-
-    <p class="top-sellers-modal-form-label">Comment</p>
-    <label class="top-sellers-modal-input-label" for="user-comment">
-      <textarea
-        class="top-sellers-modal-input top-sellers-modal-input-comment"
-        type="text"
-        name="user-comment"
-        id="user-comment"
-        placeholder="Enter text"
-      ></textarea>
-    </label>
-
-    <button class="top-sellers-modal-submit" type="button">Submit</button>
-
+      <button class="top-sellers-modal-submit" type="submit">Submit</button>
+    </form>
     <svg
       aria-hidden="true"
       class="top-sellers-modal-close"
