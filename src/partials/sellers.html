@@ -265,27 +265,29 @@
     </ul>
     <form>
       <p class="top-sellers-modal-form-label">Personal information</p>
-      <label class="top-sellers-modal-input-label" for="name">
-        <input
-          class="top-sellers-modal-input"
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Name"
-          pattern="^[A-Za-zА-Яа-яІіЇїЄєҐґ'’-]+$"
-          title="Ім'я повинно містити тільки літери"
-          required
-      /></label>
-      <label class="top-sellers-modal-input-label" for="surname">
-        <input
-          class="top-sellers-modal-input"
-          type="text"
-          name="surname"
-          id="surname"
-          placeholder="Surname"
-          pattern="^[A-Za-zА-Яа-яІіЇїЄєҐґ'’-]+$"
-          title="Прізвище повинно містити тільки літери"
-      /></label>
+      <div class="top-sellers-modal-input-fullname">
+        <label class="top-sellers-modal-input-label" for="name">
+          <input
+            class="top-sellers-modal-input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            pattern="^[A-Za-zА-Яа-яІіЇїЄєҐґ'’-]+$"
+            title="Ім'я повинно містити тільки літери"
+            required
+        /></label>
+        <label class="top-sellers-modal-input-label" for="surname">
+          <input
+            class="top-sellers-modal-input"
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="Surname"
+            pattern="^[A-Za-zА-Яа-яІіЇїЄєҐґ'’-]+$"
+            title="Прізвище повинно містити тільки літери"
+        /></label>
+      </div>
       <p class="top-sellers-modal-form-label">Email</p>
       <label class="top-sellers-modal-input-label" for="email">
         <input
@@ -327,8 +329,8 @@
           name="phone"
           id="phone"
           placeholder="Phone number"
-          pattern="^\d{2}-\d{7}$"
-          title="Формат телефону: xx-xxxxxxx"
+          pattern="^\d{9}$"
+          title="Формат телефону: xxxxxxxxx"
           required
       /></label>
       <p class="top-sellers-modal-form-label">Card number</p>

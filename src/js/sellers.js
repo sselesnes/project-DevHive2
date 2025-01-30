@@ -1,6 +1,6 @@
 document.querySelectorAll('.top-sellers-modal-input').forEach(input => {
   input.addEventListener('focus', function () {
-    let label = input.closest('label'); // Знаходимо батьківський label
+    let label = input.closest('label');
     if (!label) return;
 
     let tooltip = document.createElement('span');
