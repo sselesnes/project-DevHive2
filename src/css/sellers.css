@@ -44,7 +44,6 @@
   display: flex;
   flex-direction: column;
 }
-
 body.modal-open {
   overflow: hidden;
 }
@@ -59,7 +58,6 @@ body.modal-open::before {
   backdrop-filter: blur(5px);
   z-index: 2;
 }
-
 .top-sellers-modal-close {
   position: absolute;
   width: 24px;
@@ -73,7 +71,6 @@ body.modal-open::before {
 .form-close-button:focus:focus {
   stroke: var(--orange);
 }
-
 .top-sellers-modal-buy-list {
   display: flex;
   flex-direction: column;
@@ -92,7 +89,6 @@ body.modal-open::before {
   align-items: center;
   justify-content: space-between;
 }
-
 .top-sellers-modal-buy-item-weight-tag {
   width: 70px;
   height: 29px;
@@ -123,7 +119,6 @@ body.modal-open::before {
   margin-bottom: 14px;
   position: relative;
 }
-
 .top-sellers-modal-input {
   color: rgba(64, 64, 64, 0.3);
   font-size: 14px;
@@ -176,12 +171,23 @@ body.modal-open::before {
 .top-sellers-modal-input-comment {
   height: 91px;
   padding: 14px 18px;
+  margin-bottom: 4px;
   resize: none;
 }
-.top-sellers-gallery-buynow-wrapper {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
+.top-sellers-modal-submit {
+  background-color: var(--orange);
+  color: var(--white);
+  border: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  width: 120px;
+  height: 41px;
+  border-radius: 100px;
+}
+.top-sellers-modal-submit:hover {
+  background-color: #fcf1e0;
+  color: var(--orange);
 }
 @media only screen and (min-width: 768px) {
 }
