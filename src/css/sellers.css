@@ -141,12 +141,18 @@ body.modal-open::before {
 .top-sellers-modal-input::placeholder {
   color: rgba(64, 64, 64, 0.3);
 }
-
+.top-sellers-modal-input:not(:placeholder-shown) {
+  color: var(--black);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.28px;
+}
 .input-tooltip {
   display: inline-block;
   background-color: rgba(64, 64, 64, 1);
   color: white;
-  padding: 4px;
+  padding: 4px 6px;
   font-size: 9px;
   border-radius: 4px;
   white-space: nowrap;
@@ -181,7 +187,7 @@ body.modal-open::before {
   align-items: center;
   gap: 8px;
   left: 18px;
-  top: 10px;
+  top: 9px;
   width: 74px;
   height: 25px;
   box-shadow: 1.5px 0px 0px 0px rgba(0, 0, 0, 0.1);
