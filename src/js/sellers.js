@@ -1,3 +1,19 @@
+document.querySelectorAll('.top-sellers-modal-input').forEach(input => {
+  input.addEventListener('focus', function () {
+    let label = input.closest('label'); // Знаходимо батьківський label
+    if (!label) return;
+
+    let tooltip = document.createElement('span');
+    tooltip.className = 'input-tooltip';
+    tooltip.innerText = input.title;
+    label.appendChild(tooltip);
+  });
+
+  input.addEventListener('blur', function () {
+    let tooltip = this.closest('label')?.querySelector('.input-tooltip');
+    if (tooltip) tooltip.remove();
+  });
+});
 document
   .querySelector('.top-sellers-gallery-buynow')
   .addEventListener('click', () => {

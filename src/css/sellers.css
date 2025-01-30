@@ -138,6 +138,29 @@ body.modal-open::before {
 .top-sellers-modal-input:focus-visible {
   border-color: var(--orange);
 }
+.top-sellers-modal-input::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.input-tooltip {
+  display: inline-block;
+  background-color: rgba(64, 64, 64, 1);
+  color: white;
+  padding: 4px;
+  font-size: 9px;
+  border-radius: 4px;
+  white-space: nowrap;
+  position: absolute;
+  align-self: center;
+  top: -22px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.top-sellers-modal-input:focus-visible + .input-tooltip {
+  opacity: 1;
+}
 
 .top-sellers-modal-input-creditcard {
   padding-right: 50px;
