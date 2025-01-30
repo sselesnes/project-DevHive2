@@ -107,26 +107,25 @@ body.modal-open::before {
   font-style: normal;
   font-weight: 600;
 }
-.top-sellers-modal-input-form {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  row-gap: 14px;
-  margin-bottom: 18px;
-}
 .top-sellers-modal-form-label {
   color: var(--black);
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.24px;
+  margin-top: 18px;
   margin-bottom: 8px;
 }
 .top-sellers-modal-input-label {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 14px;
+  position: relative;
 }
+
 .top-sellers-modal-input {
   color: rgba(64, 64, 64, 0.3);
-  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -137,8 +136,55 @@ body.modal-open::before {
   border-radius: 8px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+  background-color: var(--white);
 }
-
+.top-sellers-modal-input-creditcard {
+  padding-right: 50px;
+}
+.top-sellers-modal-input-creditcard-icon {
+  position: absolute;
+  right: 19px;
+  top: 16.5px;
+  width: 22px;
+  height: 13px;
+}
+.top-sellers-modal-input-phone {
+  padding-left: 106px;
+}
+.top-sellers-modal-input-prefix {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  left: 18px;
+  top: 10px;
+  width: 74px;
+  height: 25px;
+  box-shadow: 1.5px 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.top-sellers-modal-input-phone-icon {
+  width: 24px;
+  height: 18px;
+}
+.top-sellers-modal-input-phone-prefix {
+  color: var(--black);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.28px;
+}
+.top-sellers-modal-input-comment {
+  height: 91px;
+  padding: 14px 18px;
+  resize: none;
+}
+.top-sellers-gallery-buynow-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+}
 /* #endregion top-sellers-modal */
 
 .top-sellers-title,
