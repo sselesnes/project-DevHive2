@@ -1,12 +1,6 @@
-.reviews {
-  width: 1200px;
-}
-
 .rev-head-span {
   color: #fd9222;
-
   text-align: center;
-  font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -35,7 +29,6 @@
 .review-card {
   display: flex;
   flex-direction: column;
-
   width: 360px;
   height: 200px;
   border-radius: 15px;
@@ -53,7 +46,6 @@
 .rev-name {
   color: #111;
   text-align: center;
-  font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -72,7 +64,9 @@
   letter-spacing: -0.28px;
 }
 
-.reviews-swipe {
+.reviews-swipe-list {
+  display: flex;
+  align-items: center;
 }
 
 .review-button-div {
