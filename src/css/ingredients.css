@@ -61,7 +61,46 @@
     height: 270px;
     gap: 0px;
     border-radius: 15px;
-    padding: 28px 55px 71px 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.image-container-milk-chocolate {
+    width: 335px;
+    height: 270px;
+    background: #FD9222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.image-container-milk {
+    width: 335px;
+    height: 270px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.image-container-nuts {
+    width: 335px;
+    height: 270px;
+    background: #1E1823;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.image-container-chocolate-drops {
+    width: 335px;
+    height: 270px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 .list-overlay-first {
     display: flex;
@@ -192,7 +231,10 @@
     border-radius: 15px;
     border: 1px solid #FD9222;
     background: #FFF;
-    padding: 28px 55px 71px 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 .text-milk {
     color: #111;
@@ -208,7 +250,10 @@
     border-radius: 15px;
     width: 335px;
     background: #1E1823;
-    padding: 28px 55px 71px 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 .text-nuts {
     color: #FFF;
@@ -224,7 +269,10 @@
     border-radius: 15px;
     border: 1px solid #FD9222;
     background: #FFF;
-    padding: 28px 55px 71px 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 .text-chocolate-drops {
     color: #111;
@@ -243,6 +291,8 @@
     line-height: 18px;
     letter-spacing: -0.28px;
     text-transform: uppercase;
+    align-self: flex-start;
+    margin-left: 28px;
 }
 .ingredient-name-milk-chocolate {
     color: #FFF;
@@ -252,4 +302,199 @@
     line-height: 18px;
     letter-spacing: -0.28px;
     text-transform: uppercase;
+    align-self: flex-start;
+    margin-left: 28px;
 }
+.ingredient-name-nuts {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+    align-self: flex-start;
+    margin-left: 28px;
+}
+.ingredient-name-chocolate-drops {
+    color: #111;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+    align-self: flex-start;
+    margin-left: 28px;
+}
+@media screen and (min-width: 768px) {
+    .container-content {
+        display: flex;
+        width: 704px;
+        height: 778px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        flex-shrink: 0;
+    }
+
+    .block-titel {
+        display: flex;
+        width: 486px;
+        height: 156px;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+        flex-shrink: 0;
+    }
+
+    .ingredients-grid {
+        display: flex;
+        width: 704px;
+        height: 572px;
+        align-items: flex-start;
+        gap: 32px;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+    }
+
+    .ingredients-chocolate {
+        width: 336px;
+        height: 270px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: #FD9222;
+        order: 1;
+    }
+
+    .ingredients-milk {
+        width: 336px;
+        height: 270px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        border: 1px solid #FD9222;
+        background: #FFF;
+        order: 2;
+    }
+
+    .ingredients-nuts {
+        width: 336px;
+        height: 270px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: #1E1823;
+        order: 4;
+    }
+
+    .ingredients-chocolate-drops {
+        width: 336px;
+        height: 270px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        border: 1px solid #FD9222;
+        background: #FFF;
+        order: 3;
+    }
+}
+ @media screen and ( min-width: 1280px){
+    .container-content {
+        display: flex;
+            width: 1136px;
+            height: 476px;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            flex-shrink: 0;
+    }
+    .block-titel {
+        display: flex;
+            width: 486px;
+            height: 156px;
+            flex-direction: column;
+            align-items: center;
+            gap: 28px;
+            flex-shrink: 0;
+    }
+    .titel-ingredients {
+        color: #111;
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: -0.72px;
+            text-transform: uppercase;
+    }
+    .span-titel {
+        color: #FD9222;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: -0.72px;
+            text-transform: uppercase;
+    }
+    .description {
+        color: #111;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: -0.28px;
+    }
+    .ingredients-grid {
+        display: flex;
+            width: 1136px;
+            align-items: flex-start;
+            gap: 19px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+    }
+    .ingredients-chocolate {
+        display: flex;
+            padding: 28px 36px 28px 28px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 36px;
+            border-radius: 15px;
+                background: #FD9222;
+                order: 1;
+    }
+    .ingredients-milk {
+        display: flex;
+            padding: 28px 36px 28px 28px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 36px;
+            border-radius: 15px;
+                border: 1px solid #FD9222;
+                background: #FFF;
+                order: 2;
+    }
+    .ingredients-nuts {
+        display: flex;
+            padding: 28px 36px 28px 28px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 36px;
+            border-radius: 15px;
+                background: #1E1823;
+                order: 3;
+    }
+    .ingredients-chocolate-drops {
+        display: flex;
+            padding: 28px 36px 28px 28px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 36px;
+            border-radius: 15px;
+                border: 1px solid #FD9222;
+                background: #FFF;
+                order: 4;
+    }
+ }
