@@ -1,2 +1,65 @@
 .discover {
+  margin-bottom: 72px;
+}
+.discover-title {
+  color: var(--black);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  margin-bottom: 32px;
+}
+.discover-title-span {
+  color: var(--orange);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+}
+.discover-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.discover-video-thumb {
+  position: relative;
+  display: block;
+}
+.discover-playvideo-icon {
+  position: absolute;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  fill: var(--white);
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.discover-benefits {
+  padding: 20px 14px;
+}
+.discover-benefits-title {
+  color: var(--black);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.discover-benefits-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+.discover-benefit-item {
+  color: var(--black);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.28px;
 }
