@@ -80,6 +80,14 @@
   margin-bottom: 32px;
 }
 
+.rev-logo-oval {
+  fill: #fd9222;
+}
+
+.rev-logo {
+  fill: rgba(17, 17, 17, 0.1);
+}
+
 .rev-swipe-item {
 }
 
