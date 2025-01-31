@@ -37,7 +37,7 @@ body.modal-open::before {
   width: 100vw;
   height: 100vh;
   background-color: rgba(46, 47, 66, 0.6);
-  backdrop-filter: blur(2px);
+  /* backdrop-filter: blur(2px); */
   z-index: 2;
 }
 .top-sellers-modal.is-open {
