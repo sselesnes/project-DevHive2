@@ -1,6 +1,9 @@
 :root {
   --white-pure: #fff;
 }
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
 .sellers {
   padding-bottom: 72px;
   background-color: var(--white);
