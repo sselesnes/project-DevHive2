@@ -149,6 +149,7 @@
 <!-- modal is-open -->
 <section
   class="top-sellers-modal"
+  role="dialog"
   id="top-sellers-modal"
   aria-label="Chocolate order form. Select the type and weight of chocolate, enter your personal information, phone number, and payment details to complete the purchase."
 >
@@ -157,10 +158,11 @@
       BUY <span class="top-sellers-modal-title-span">NOW</span>
     </h2>
     <ul
+      role="list"
       class="top-sellers-modal-buy-list"
       aria-label="List of available chocolate products for purchase. Includes images, weights, and prices of each product."
     >
-      <li class="top-sellers-modal-buy-item">
+      <li class="top-sellers-modal-buy-item" role="listitem">
         <picture>
           <source
             type="image/webp"
@@ -194,7 +196,7 @@
           100 g
         </p>
       </li>
-      <li class="top-sellers-modal-buy-item">
+      <li class="top-sellers-modal-buy-item" role="listitem">
         <picture>
           <source
             type="image/webp"
@@ -228,7 +230,7 @@
           200 g
         </p>
       </li>
-      <li class="top-sellers-modal-buy-item">
+      <li class="top-sellers-modal-buy-item" role="listitem">
         <picture>
           <source
             type="image/webp"
@@ -385,6 +387,7 @@
       <button class="top-sellers-modal-submit" type="submit">Submit</button>
     </form>
     <svg
+      aria-label="Modal window close button"
       aria-hidden="true"
       class="top-sellers-modal-close"
       width="24"
