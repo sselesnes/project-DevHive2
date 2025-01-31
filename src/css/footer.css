@@ -1,4 +1,8 @@
 /* #region footer */
+.hidden {
+    display: none;
+}
+
 .footer {
     background-color: #1e1823;
     color: var(--white);
@@ -25,7 +29,7 @@
     letter-spacing: -0.48px;
 }
 
-.logo-orange {
+.title-orange {
     color: #FD9222;
 }
 
