@@ -32,12 +32,12 @@
 body.modal-open::before {
   content: '';
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 30vw;
+  left: 0vw;
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   background-color: rgba(46, 47, 66, 0.6);
-  /* backdrop-filter: blur(2px); */
+  backdrop-filter: blur(3px);
   z-index: 2;
 }
 .top-sellers-modal.is-open {
