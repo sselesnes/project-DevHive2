@@ -1,5 +1,409 @@
-<section class="sellers" id="sellers">
+<section
+  role="region"
+  class="sellers"
+  id="sellers"
+  aria-label="Top selling chocolate products. Includes a gallery of dark chocolate, milk chocolate, and truffle chocolate, along with a Buy now button that opens a modal for selecting products."
+>
   <div class="container">
-    <p>sellers</p>
+    <h2 class="top-sellers-title" id="top-sellers-title">
+      TOP <span class="top-sellers-title-span">SELLERS</span>
+    </h2>
+    <ul
+      class="top-sellers-gallery"
+      aria-label="Gallery of top selling chocolate products. Includes images of dark chocolate with hazelnuts and coffee beans, milk chocolate with almonds, raisins, and mint, and a stack of assorted chocolate bars with a hazelnut chocolate truffle on top. Also features a Buy now button to open a modal for selecting products."
+    >
+      <li>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              /img/sellers/dark-chocolate-hazelnuts-coffee-beans-d.webp   1x,
+              /img/sellers/dark-chocolate-hazelnuts-coffee-beans-d@2.webp 2x
+            "
+            media="(min-width: 1200px)"
+            width="368"
+            height="464"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              /img/sellers/dark-chocolate-hazelnuts-coffee-beans-t.webp   1x,
+              /img/sellers/dark-chocolate-hazelnuts-coffee-beans-t@2.webp 2x
+            "
+            media="(min-width: 768px)"
+            width="344"
+            height="464"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              /img/sellers/dark-chocolate-hazelnuts-coffee-beans-m.webp   1x,
+              /img/sellers/dark-chocolate-hazelnuts-coffee-beans-m@2.webp 2x
+            "
+            width="335"
+            height="464"
+          />
+          <img
+            class="top-sellers-gallery-img"
+            src="/img/sellers/dark-chocolate-hazelnuts-coffee-beans-m.webp"
+            width="335"
+            height="464"
+            alt="Pieces of dark chocolate on a wooden surface next to hazelnuts and coffee beans."
+          />
+        </picture>
+      </li>
+      <li>
+        <picture class="top-sellers-gallery-img">
+          <source
+            type="image/webp"
+            srcset="
+              /img/sellers/milk-chocolate-almonds-raisins-mint-d.webp   1x,
+              /img/sellers/milk-chocolate-almonds-raisins-mint-d@2.webp 2x
+            "
+            media="(min-width: 1200px)"
+            width="368"
+            height="464"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              /img/sellers/milk-chocolate-almonds-raisins-mint-t.webp   1x,
+              /img/sellers/milk-chocolate-almonds-raisins-mint-t@2.webp 2x
+            "
+            media="(min-width: 768px)"
+            width="344"
+            height="464"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              /img/sellers/milk-chocolate-almonds-raisins-mint-m.webp   1x,
+              /img/sellers/milk-chocolate-almonds-raisins-mint-m@2.webp 2x
+            "
+            width="335"
+            height="464"
+          />
+          <img
+            class="top-sellers-gallery-img"
+            src="/img/sellers/milk-chocolate-almonds-raisins-mint-m.webp"
+            width="335"
+            height="464"
+            alt="Stack of milk chocolate pieces with almonds, raisins, and a mint leaf on top."
+          />
+        </picture>
+      </li>
+      <li>
+        <picture class="top-sellers-gallery-img">
+          <source
+            type="image/webp"
+            srcset="
+              /img/sellers/stacked-chocolate-truffle-dark-d.webp   1x,
+              /img/sellers/stacked-chocolate-truffle-dark-d@2.webp 2x
+            "
+            media="(min-width: 1200px)"
+            width="368"
+            height="464"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              /img/sellers/stacked-chocolate-truffle-dark-t.webp   1x,
+              /img/sellers/stacked-chocolate-truffle-dark-t@2.webp 2x
+            "
+            media="(min-width: 768px)"
+            width="344"
+            height="464"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              /img/sellers/stacked-chocolate-truffle-dark-m.webp   1x,
+              /img/sellers/stacked-chocolate-truffle-dark-m@2.webp 2x
+            "
+            width="335"
+            height="464"
+          />
+          <img
+            class="top-sellers-gallery-img"
+            src="/img/sellers/stacked-chocolate-truffle-dark-m.webp"
+            width="335"
+            height="464"
+            alt="A stack of assorted chocolate bars with a hazelnut chocolate truffle on top, placed on a rustic wooden surface."
+          />
+        </picture>
+      </li>
+      <li>
+        <p class="top-sellers-chocolate-fact">
+          Crazy enough chocolate originates from a bean just like the coffee
+          bean called Cacao. Cacao has been around for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
+        </p>
+      </li>
+      <li>
+        <button class="top-sellers-gallery-buynow" type="button">
+          Buy now
+        </button>
+      </li>
+    </ul>
   </div>
+</section>
+<!-- modal is-open -->
+<section
+  class="top-sellers-modal"
+  role="dialog"
+  id="top-sellers-modal"
+  aria-label="Chocolate order form. Select the type and weight of chocolate, enter your personal information, phone number, and payment details to complete the purchase."
+>
+  <div class="top-sellers-modal-wrapper">
+    <h2 class="top-sellers-modal-title" id="top-sellers-modal-title">
+      BUY <span class="top-sellers-modal-title-span">NOW</span>
+    </h2>
+    <ul
+      role="list"
+      class="top-sellers-modal-buy-list"
+      aria-label="List of available chocolate products for purchase. Includes images, weights, and prices of each product."
+    >
+      <li class="top-sellers-modal-buy-item" role="listitem">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              /img/sellers/chocolate-bar-kinder-chocolate-white-chocolate-chocolate-nuts-t.webp 1x,
+              /img/sellers/chocolate-bar-kinder-chocolate-white-chocolate-chocolate-nuts@2.webp 2x
+            "
+            media="(min-width: 768px)"
+            width="120"
+            height="107"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              /img/sellers/chocolate-bar-kinder-chocolate-white-chocolate-chocolate-nuts-m.webp   1x,
+              /img/sellers/chocolate-bar-kinder-chocolate-white-chocolate-chocolate-nuts-m@2.webp 2x
+            "
+            width="84"
+            height="69"
+          />
+          <img
+            type="image/webp"
+            class="top-sellers-modal-buy-item-img"
+            src="/img/sellers/chocolate-bar-kinder-chocolate-white-chocolate-chocolate-nuts-m.webp"
+            width="84"
+            height="69"
+            alt="Assorted chocolate bar with white chocolate, nuts, and Kinder chocolate, perfect for a variety of flavors!"
+          />
+        </picture>
+        <p class="top-sellers-modal-buy-item-weight-tag" data-weight="100g">
+          100 g
+        </p>
+      </li>
+      <li class="top-sellers-modal-buy-item" role="listitem">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              /img/sellers/chocolate-bar-praline-kinder-chocolate-bonbon-milk-t.webp   1x,
+              /img/sellers/chocolate-bar-praline-kinder-chocolate-bonbon-milk-t@2.webp 2x
+            "
+            media="(min-width: 768px)"
+            width="120"
+            height="107"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              /img/sellers/chocolate-bar-praline-kinder-chocolate-bonbon-milk-m.webp   1x,
+              /img/sellers/chocolate-bar-praline-kinder-chocolate-bonbon-milk-m@2.webp 2x
+            "
+            width="84"
+            height="69"
+          />
+          <img
+            type="image/webp"
+            class="top-sellers-modal-buy-item-img"
+            src="/img/sellers/chocolate-bar-praline-kinder-chocolate-bonbon-milk-m.webp"
+            width="84"
+            height="69"
+            alt="Creamy milk chocolate bar with praline, Kinder chocolate, and bonbons for a rich, indulgent treat!"
+          />
+        </picture>
+        <p class="top-sellers-modal-buy-item-weight-tag" data-weight="200g">
+          200 g
+        </p>
+      </li>
+      <li class="top-sellers-modal-buy-item" role="listitem">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              /img/sellers/chocolate-bar-dark-chocolate-t.webp   1x,
+              /img/sellers/chocolate-bar-dark-chocolate-t@2.webp 2x
+            "
+            media="(min-width: 768px)"
+            width="120"
+            height="107"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              /img/sellers/chocolate-bar-dark-chocolate-m.webp   1x,
+              /img/sellers/chocolate-bar-dark-chocolate-m@2.webp 2x
+            "
+            width="84"
+            height="69"
+          />
+          <img
+            type="image/webp"
+            class="top-sellers-modal-buy-item-img"
+            src="/img/sellers/chocolate-bar-dark-chocolate-m.webp"
+            width="84"
+            height="69"
+            alt="Premium dark chocolate bar, perfect for those who love the intense, rich taste of dark chocolate!"
+          />
+        </picture>
+        <p class="top-sellers-modal-buy-item-weight-tag" data-weight="300g">
+          300 g
+        </p>
+      </li>
+    </ul>
+    <form>
+      <p class="top-sellers-modal-form-label">Personal information</p>
+      <div class="top-sellers-modal-input-fullname">
+        <label class="top-sellers-modal-input-label" for="name">
+          <input
+            class="top-sellers-modal-input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            pattern="^[A-Za-zА-Яа-яІіЇїЄєҐґ'’-]+$"
+            title="Ім'я повинно містити тільки літери"
+            required
+        /></label>
+        <label class="top-sellers-modal-input-label" for="surname">
+          <input
+            class="top-sellers-modal-input"
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="Surname"
+            pattern="^[A-Za-zА-Яа-яІіЇїЄєҐґ'’-]+$"
+            title="Прізвище повинно містити тільки літери"
+        /></label>
+      </div>
+      <p class="top-sellers-modal-form-label">Email</p>
+      <label class="top-sellers-modal-input-label" for="email">
+        <input
+          class="top-sellers-modal-input"
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          title="Введіть коректний email (наприклад, example@mail.com)"
+          required
+      /></label>
+      <p class="top-sellers-modal-form-label">Phone number</p>
+      <label class="top-sellers-modal-input-label" for="phone">
+        <div class="top-sellers-modal-input-prefix">
+          <svg
+            aria-hidden="true"
+            class="top-sellers-modal-input-phone-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 40 32"
+          >
+            <path
+              fill="gold"
+              d="M40.209.495H.307V30.19h39.902V.495z"
+              style="fill: var(--color1, #ffd700)"
+            />
+            <path
+              fill="#0057b7"
+              d="M.307.495h39.902v14.847H.307V.495z"
+              style="fill: var(--color2, #0057b7)"
+            />
+          </svg>
+          <p class="top-sellers-modal-input-phone-prefix">+380</p>
+        </div>
+
+        <input
+          class="top-sellers-modal-input top-sellers-modal-input-phone"
+          type="text"
+          name="phone"
+          id="phone"
+          placeholder="Phone number"
+          pattern="^\d{9}$"
+          title="Формат телефону: xxxxxxxxx"
+          required
+      /></label>
+      <p class="top-sellers-modal-form-label">Card number</p>
+
+      <label class="top-sellers-modal-input-label" for="creditcard">
+        <svg
+          aria-hidden="true"
+          class="top-sellers-modal-input-creditcard-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 50 32"
+        >
+          <path
+            fill="#ed0006"
+            d="M25.143 28.078c-2.656 2.194-6.102 3.518-9.867 3.518C6.875 31.596.065 25.003.065 16.87S6.875 2.144 15.276 2.144c3.765 0 7.21 1.324 9.867 3.518 2.656-2.194 6.102-3.518 9.866-3.518 8.401 0 15.211 6.593 15.211 14.726s-6.81 14.726-15.211 14.726c-3.765 0-7.21-1.324-9.867-3.518z"
+            style="fill: var(--color1, #ed0006)"
+          />
+          <path
+            fill="#f9a000"
+            d="M25.143 28.078c3.271-2.701 5.344-6.72 5.344-11.208s-2.074-8.507-5.344-11.208c2.656-2.194 6.102-3.518 9.866-3.518 8.401 0 15.211 6.593 15.211 14.726s-6.81 14.726-15.211 14.726c-3.765 0-7.21-1.324-9.867-3.518z"
+            style="fill: var(--color2, #f9a000)"
+          />
+          <path
+            fill="#ff5e00"
+            d="M25.143 28.078c3.271-2.701 5.344-6.72 5.344-11.208s-2.074-8.507-5.344-11.208c-3.271 2.701-5.344 6.72-5.344 11.208s2.074 8.507 5.344 11.208z"
+            style="fill: var(--color3, #ff5e00)"
+          />
+        </svg>
+        <input
+          class="top-sellers-modal-input top-sellers-modal-input-creditcard"
+          type="text"
+          name="creditcard"
+          id="creditcard"
+          placeholder="Enter card"
+          required
+          maxlength="16"
+          pattern="^\d{16}$"
+          title="Номер картки повинен містити 16 цифр"
+      /></label>
+
+      <p class="top-sellers-modal-form-label">Comment</p>
+      <label class="top-sellers-modal-input-label" for="comment">
+        <textarea
+          class="top-sellers-modal-input top-sellers-modal-input-comment"
+          type="text"
+          name="comment"
+          id="comment"
+          placeholder="Enter text"
+          title="Коментар до замовлення"
+        ></textarea>
+      </label>
+
+      <button class="top-sellers-modal-submit" type="submit">Submit</button>
+    </form>
+    <svg
+      aria-label="Modal window close button"
+      aria-hidden="true"
+      class="top-sellers-modal-close"
+      width="24"
+      heigth="24"
+      viewBox="0 0 32 32"
+    >
+      <path
+        stroke-linejoin="round"
+        stroke-linecap="round"
+        stroke-width="2.667"
+        d="M24 8 8 24M8 8l16 16"
+      />
+    </svg>
+  </div>
+  <script src="./js/sellers.js">
+    defer
+  </script>
 </section>
