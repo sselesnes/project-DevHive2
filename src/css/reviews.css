@@ -153,6 +153,13 @@
   fill: rgba(17, 17, 17, 0.1);
 }
 
+.rev-logo:focus,
+.rev-logo:hover {
+  width: 28px;
+  height: 13px;
+  fill: #fd9222;
+}
+
 .rev-swipe-item {
 }
 
