@@ -33,8 +33,7 @@
 }
 
 .icon-sandvich:hover {
-    width: 28px;
-    height: 28px;
+    transform: scale(0.875);
 }
 
 .btn-sandvich {
@@ -137,6 +136,7 @@
 }
 .icon-close:hover {
     stroke: #FD9222;
+    
 }
 
 
