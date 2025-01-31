@@ -28,9 +28,14 @@
 
 @media screen and (min-width: 768px) {
   .rev-card-list {
-    justify-content: center;
     gap: 16px;
     margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .rev-card-list {
+    gap: 28px;
   }
 }
 
@@ -49,6 +54,12 @@
 @media screen and (min-width: 768px) {
   .review-card {
     width: 344px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .review-card {
+    width: 360px;
   }
 }
 
