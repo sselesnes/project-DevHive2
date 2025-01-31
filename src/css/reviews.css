@@ -155,9 +155,8 @@
 
 .rev-logo:focus,
 .rev-logo:hover {
-  width: 28px;
-  height: 13px;
   fill: #fd9222;
+  transition: transform 0.3s ease-out;
 }
 
 .rev-swipe-item {
