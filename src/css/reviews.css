@@ -98,6 +98,11 @@
 
 .btn-reviews {
   display: flex;
+  color: #111;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
   padding: 12px 28px;
   align-items: center;
   gap: 14px;
