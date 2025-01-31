@@ -159,6 +159,12 @@
   border: 1px solid #fd9222;
 }
 
+.btn-reviews:focus,
+.btn-reviews:hover {
+  color: #fff;
+  background-color: #fd9222;
+}
+
 @media screen and (min-width: 768px) {
   .btn-reviews {
     font-size: 18px;
