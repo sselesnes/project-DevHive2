@@ -103,7 +103,7 @@
     height: 100%;
     background-color: #FFF;
     border-radius: 15px;
-    padding: 20px;
+    padding: 28px;
     opacity: 0;
     visibility: hidden;
     transform: scale(0.95);
@@ -269,7 +269,7 @@
     letter-spacing: -0.28px;
     text-transform: uppercase;
     align-self: flex-start;
-    margin-left: 28px;
+    /* margin-left: 28px; */
 }
 .ingredient-name-milk-chocolate {
     color: #FFF;
@@ -290,7 +290,7 @@
     letter-spacing: -0.28px;
     text-transform: uppercase;
     align-self: flex-start;
-    margin-left: 28px;
+    /* margin-left: 28px; */
 }
 .ingredient-name-chocolate-drops {
     color: #111;
@@ -301,7 +301,7 @@
     letter-spacing: -0.28px;
     text-transform: uppercase;
     align-self: flex-start;
-    margin-left: 28px;
+    /* margin-left: 28px; */
 }
 @media screen and (min-width: 768px) {
     .container-content {
