@@ -1,0 +1,10 @@
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol id="Ellipse" viewBox="0 0 32 32">
+            <path d="M16 32c8.837 0 16-7.163 16-16S24.837 0 16 0 0 7.163 0 16s7.163 16 16 16z"/>
+        </symbol>
+        <symbol id="Rectangle" viewBox="0 0 69 32">
+            <path d="M52.923 0H16C7.163 0 0 7.163 0 16s7.163 16 16 16h36.923c8.837 0 16-7.163 16-16s-7.163-16-16-16z"/>
+        </symbol>
+    </defs>
+</svg>
