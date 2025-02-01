@@ -8,6 +8,10 @@
       <li class="review-card">
         <img
           src="/img/reviews/victoria-dobrzhanska.png"
+          srcset="
+            /img/reviews/victoria-dobrzhanska.png,
+            /img/reviews/victoria-dobrzhanska2x.png 2x
+          "
           class="rev-img"
           alt="Victoria Dobrzhanska"
           width="80"
@@ -22,6 +26,10 @@
       <li class="review-card">
         <img
           src="/img/reviews/nazar-babenko.png"
+          srcset="
+            /img/reviews/nazar-babenko.png,
+            /img/reviews/nazar-babenko2x.png 2x
+          "
           class="rev-img"
           alt="Nazar Babenko"
           width="80"
@@ -36,6 +44,10 @@
       <li class="review-card">
         <img
           src="/img/reviews/olena-kampush.png"
+          srcset="
+            /img/reviews/olena-kampush.png,
+            /img/reviews/olena-kampush2x.png 2x
+          "
           class="rev-img"
           alt="Olena Kampusch"
           width="80"
@@ -82,6 +94,27 @@
 
     <div class="review-button-div">
       <button type="button" class="btn-reviews">Leave a review</button>
+    </div>
+  </div>
+
+  <div class="rev-modal-overlay is-open">
+    <div class="rev-modal">
+      <button class="rev-close-btn" type="button">
+        <svg class="rev-svg-close" width="24" height="24">
+          <use href="/img/reviews/icons.svg#x-close"></use>
+        </svg>
+      </button>
+      <p class="rev-modal-cta">
+        leave a review about <span class="rev-modal-span">our chocolate</span>
+      </p>
+
+      <div class="rev-modal-form">
+        <form action="">
+          <label for="">
+            <input type="text" />
+          </label>
+        </form>
+      </div>
     </div>
   </div>
 </section>
