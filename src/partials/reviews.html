@@ -97,7 +97,10 @@
     </div>
   </div>
 
+
+  <!-- modal pop up -->
   <div class="rev-modal-overlay">
+
     <div class="rev-modal">
       <button class="rev-close-btn" type="button">
         <svg class="rev-svg-close" width="24" height="24">
@@ -105,16 +108,67 @@
         </svg>
       </button>
       <p class="rev-modal-cta">
-        leave a review about <span class="rev-modal-span">our chocolate</span>
+        leave a review <br class="break" />
+        about <span class="rev-modal-span">our chocolate</span>
       </p>
 
-      <div class="rev-modal-form">
-        <form action="">
-          <label for="">
-            <input type="text" />
-          </label>
-        </form>
-      </div>
+      <form>
+        <div class="rev-form-wrapper">
+          <input
+            class="rev-form-input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+          />
+        </div>
+        <div class="rev-form-wrapper">
+          <input
+            class="rev-form-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div class="rev-form-input-wrapper">
+          <div class="rev-form-prefix">
+            <svg
+              aria-hidden="true"
+              class="rev-form-input-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 40 32"
+            >
+              <path
+                fill="gold"
+                d="M40.209.495H.307V30.19h39.902V.495z"
+                style="fill: var(--color1, #ffd700)"
+              />
+              <path
+                fill="#0057b7"
+                d="M.307.495h39.902v14.847H.307V.495z"
+                style="fill: var(--color2, #0057b7)"
+              />
+            </svg>
+            <p class="rev-form-country-code">+380</p>
+          </div>
+          <input
+            class="rev-form-input-tel"
+            type="tel"
+            placeholder="Phone number"
+          />
+        </div>
+        <div class="rev-form-wrapper">
+          <textarea
+            class="rev-form-textarea"
+            name="text"
+            id="text"
+            placeholder="Enter text"
+          ></textarea>
+        </div>
+      </form>
+      <button class="rev-btn-send">Send</button>
     </div>
   </div>
 </section>
