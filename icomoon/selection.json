@@ -1,0 +1,104 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M512 1024c282.774 0 512-229.226 512-512 0-282.77-229.226-512-512-512-282.77 0-512 229.23-512 512 0 282.774 229.23 512 512 512z"
+        ],
+        "attrs": [
+          {
+            "opacity": 0.1
+          }
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "Ellipse 3"
+        ]
+      },
+      "attrs": [
+        {
+          "opacity": 0.1
+        }
+      ],
+      "properties": {
+        "order": 32,
+        "id": 1,
+        "name": "Ellipse-3",
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 5,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M1693.538 0h-1181.538c-282.77 0-512 229.23-512 512 0 282.774 229.23 512 512 512h1181.538c282.774 0 512-229.226 512-512 0-282.77-229.226-512-512-512z"
+        ],
+        "attrs": [
+          {
+            "fill": "rgb(253, 146, 34)"
+          }
+        ],
+        "width": 2206,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "Rectangle 5"
+        ]
+      },
+      "attrs": [
+        {
+          "fill": "rgb(253, 146, 34)"
+        }
+      ],
+      "properties": {
+        "order": 33,
+        "id": 0,
+        "name": "Rectangle-5",
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 5,
+      "iconIdx": 1
+    }
+  ],
+  "height": 1024,
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false
+    },
+    "imagePref": {
+      "prefix": "",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon",
+      "name": "icomoon",
+      "height": 32,
+      "columns": 16,
+      "margin": 16
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16
+  }
+}

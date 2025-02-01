@@ -1,5 +1,45 @@
 <section class="adv" id="adv">
   <div class="container">
-    <p>adv</p>
+    <h2 class="adv-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+    <p class="adv_text">
+      From the velvety texture to the rich and complex flavor, our New Chocolate
+      is a true indulgence that will leave you craving more. Made with only the
+      finest ingredients and handcrafted with the utmost care, each piece is a
+      work of art that is sure to please.
+    </p>
+    <button class="adv_button" type="button" adv-menu-open>Subscribe</button>
+  </div>
+  <!-- Модалка -->
+  <div class="adv_backdrop" adv-menu>
+    <div class="adv_menu">
+      <div class="adv_menu-img">
+        <button class="adv_menu-close" type="button" adv-menu-close>
+          <svg class="adv_menu-close-svg" width="24" height="24">
+            <use href="/img/adv/adv_icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="adv_menu-modal">
+        <h3 class="adv_menu-title">
+          Explore our <br /><span class="menu-title_text">new chocolate</span>
+          first!
+        </h3>
+        <form class="adv_form">
+          <input
+            class="form-input-person"
+            type="email"
+            id="form-person-email"
+            name="form-person-email"
+            required
+            placeholder=" "
+            pattern=".*"
+          />
+          <label class="adv_form-label" for="form-person-email"
+            >Enter your email</label
+          >
+          <button class="adv_menu-button" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
   </div>
 </section>
