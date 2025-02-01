@@ -3,6 +3,7 @@
   padding: 20px 0;
   --white-pure: #fff;
   --white-translucent: rgba(255, 255, 255, 0.7);
+  margin-bottom: 72px;
 }
 .visually-hidden {
   position: absolute;
@@ -56,6 +57,7 @@
 @media only screen and (min-width: 768px) {
   .benefits {
     padding: 50px 0;
+    margin-bottom: 100px;
   }
   .benefits-list {
     flex-wrap: wrap;
@@ -71,6 +73,7 @@
 @media only screen and (min-width: 1200px) {
   .benefits {
     padding: 50px 18px;
+    margin-bottom: 128px;
   }
 
   .benefits-list {
