@@ -185,16 +185,20 @@ body.modal-open {
 .top-sellers-modal-input-phone {
   padding-left: 106px;
 }
+.top-sellers-modal-input-wrapper {
+  position: relative;
+}
 .top-sellers-modal-input-prefix {
   position: absolute;
   display: flex;
   align-items: center;
   gap: 8px;
   left: 18px;
-  top: 10px;
+  top: 32px;
   width: 74px;
   height: 25px;
   box-shadow: 1.5px 0px 0px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 .top-sellers-modal-input-phone-icon {
   width: 24px;
@@ -270,7 +274,7 @@ body.modal-open {
     align-items: center;
     gap: 18px;
     left: 24px;
-    top: 17px;
+    top: 39px;
     width: 125px;
     height: 32px;
   }
