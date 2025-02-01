@@ -1,3 +1,4 @@
+'use strict';
 document.querySelectorAll('.top-sellers-modal-input').forEach(input => {
   input.addEventListener('focus', function () {
     let label = input.closest('label');
