@@ -276,6 +276,19 @@
   letter-spacing: -0.28px;
 }
 
+.rev-form-input-wrapper {
+  position: relative;
+}
+
+/* fill: #ffd700;
+  fill: #0057b7; */
+
+.rev-input-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .rev-form-textarea {
   width: 100%;
   height: 91px;
