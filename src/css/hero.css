@@ -10,6 +10,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .hero-container {
   background-color: #fcf1e0;
   max-width: 1136px;
@@ -26,18 +27,26 @@
   background-size: cover;
   margin-bottom: 72px;
 }
-.hero-paragraph {
-  width: 484px px;
-  height: 102px px;
 
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 381px 40px 40px;
+}
+
+.hero-paragraph {
+  max-width: 400px;
+  height: 102px;
+  flex-shrink: 0;
   color: #fff;
   font-family: Montserrat;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
-  line-height: 34px; /* 121.429% */
+  line-height: 1.21;
   letter-spacing: -0.84px;
   text-align: left;
+  margin-bottom: 32px;
 }
 .btns {
   display: flex;
@@ -128,13 +137,4 @@
 .footer-link:focus {
   background-color: var(--orange);
   fill: var(--white);
-}
-
-.content {
-  padding: 381px 40px 40px;
-}
-.hero-paragraph {
-  width: 484px;
-  /* height: 102px; */
-  flex-shrink: 0;
 }
