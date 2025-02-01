@@ -10,7 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
     <script type="module" crossorigin src="/project-DevHive2/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-DevHive2/assets/index-DxHm1siC.css">
+    <link rel="stylesheet" crossorigin href="/project-DevHive2/assets/index-DAEXi7Px.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -919,8 +919,7 @@
           title="Введіть коректний email (наприклад, example@mail.com)"
           required
       /></label>
-      <p class="top-sellers-modal-form-label">Phone number</p>
-      <label class="top-sellers-modal-input-label" for="phone">
+      <div class="top-sellers-modal-input-wrapper">
         <div class="top-sellers-modal-input-prefix">
           <svg
             aria-hidden="true"
@@ -941,17 +940,19 @@
           </svg>
           <p class="top-sellers-modal-input-phone-prefix">+380</p>
         </div>
-
-        <input
-          class="top-sellers-modal-input top-sellers-modal-input-phone"
-          type="text"
-          name="phone"
-          id="phone"
-          placeholder="Phone number"
-          pattern="^\d{9}$"
-          title="Формат телефону: xxxxxxxxx"
-          required
-      /></label>
+        <p class="top-sellers-modal-form-label">Phone number</p>
+        <label class="top-sellers-modal-input-label" for="phone">
+          <input
+            class="top-sellers-modal-input top-sellers-modal-input-phone"
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Phone number"
+            pattern="^\d{9}$"
+            title="Формат телефону: xxxxxxxxx"
+            required
+        /></label>
+      </div>
       <p class="top-sellers-modal-form-label">Card number</p>
 
       <label class="top-sellers-modal-input-label" for="creditcard">
