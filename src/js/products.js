@@ -1,3 +1,4 @@
+'use strict';
 const svgIcons = document.querySelectorAll('.slider-icon');
 const cardList = document.querySelector('.product-list');
 let cards = Array.from(document.querySelectorAll('.product-card'));
