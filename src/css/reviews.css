@@ -231,6 +231,12 @@
   right: 14px;
   border: none;
   background: transparent;
+  stroke: #111;
+}
+
+.rev-close-btn:hover,
+.rev-close-btn:hover {
+  stroke: #fd9222;
 }
 
 .rev-modal-cta {
