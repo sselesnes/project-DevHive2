@@ -193,3 +193,61 @@
     padding: 14px 40px;
   }
 }
+
+.rev-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background-color: #2e2f4299;
+  backdrop-filter: blur(3px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.rev-modal-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.rev-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  border-radius: 15px;
+  background: #fafafa;
+  width: 311px;
+  min-height: 471px;
+  padding: 32px 24px;
+}
+
+.rev-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border: none;
+  background: transparent;
+}
+
+.rev-svg-close {
+  background: transparent;
+}
+
+.rev-modal-cta {
+  color: #111;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.16;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  width: 255px;
+}
+
+.rev-modal-span {
+  color: #fd9222;
+}
