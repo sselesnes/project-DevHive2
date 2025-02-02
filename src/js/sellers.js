@@ -16,7 +16,7 @@ document.querySelectorAll('.top-sellers-modal-input').forEach(input => {
   });
 });
 document
-  .querySelector('.top-sellers-gallery-buynow')
+  .querySelector('.top-sellers-gallery-buynow, .btn-text')
   .addEventListener('click', () => {
     document.body.classList.add('modal-open');
     document.querySelector('.top-sellers-modal').classList.add('is-open');
