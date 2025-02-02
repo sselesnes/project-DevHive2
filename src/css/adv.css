@@ -1,2 +1,336 @@
+/* -------------------- Мобилка -------------------- */
 .adv {
+  padding: 60px 0px;
+
+  background-image: linear-gradient(
+      rgba(100, 100, 100, 0.2),
+      rgba(100, 100, 100, 0.2)
+    ),
+    url(/img/adv/adv-image_2x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 370px;
+  margin: 0 auto;
+}
+
+.adv-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+
+  margin: auto;
+  max-width: 291px;
+  margin-bottom: 24px;
+}
+
+.adv_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+
+  margin: auto;
+  max-width: 326px;
+  margin-bottom: 24px;
+}
+
+.adv_button {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+
+  border: none;
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 128px;
+  height: 41px;
+  background-color: #fd9222;
+
+  display: block;
+  margin: auto;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adv_button:focus,
+.adv_button:hover {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
+
+.adv_backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.adv_backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.adv_menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #fafafa;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  border-radius: 15px;
+  max-width: 311px;
+  width: 100vw;
+}
+
+.adv_menu-img {
+  position: relative;
+
+  background-image: linear-gradient(
+      rgba(100, 100, 100, 0.2),
+      rgba(100, 100, 100, 0.2)
+    ),
+    url(/img/adv/adv_menu-image_2x.jpg);
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
+
+  height: 169px;
+  margin: 0 auto;
+}
+
+.adv_menu-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  stroke: #fff;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adv_menu-close:hover,
+.adv_menu-close:focus {
+  background-color: #fff;
+  stroke: #111;
+}
+
+.adv_menu-modal {
+  padding: 32px 24px;
+}
+
+.adv_menu-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.menu-title_text {
+  color: #fd9222;
+}
+
+.adv_form {
+  position: relative;
+}
+
+.form-input-person {
+  width: 100%;
+  height: 45px;
+  padding: 13px 18px;
+
+  background-color: transparent;
+  outline: transparent;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 25px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+
+  transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input-person:focus {
+  border-color: #fd9222;
+}
+
+.adv_form-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.8);
+  margin-left: 18px;
+  transition: all 0.25s ease-in-out;
+}
+
+.form-input-person:focus + .adv_form-label,
+.form-input-person:not(:placeholder-shown) + .adv_form-label {
+  transform: translateY(-31px);
+  font-size: 12px;
+  color: #111;
+}
+
+.adv_menu-button {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  background-color: #fd9222;
+  border: none;
+  border-radius: 100px;
+  width: 100px;
+  height: 45px;
+  padding: 14px 22px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adv_menu-button:focus,
+.adv_menu-button:hover {
+  background-color: #1e1823;
+}
+
+/* -------------------- Таблет -------------------- */
+@media only screen and (min-width: 768px) {
+  .adv {
+    padding: 72px 0px;
+  }
+
+  .adv-title {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  .adv_text {
+    max-width: 467px;
+  }
+
+  .adv_button {
+    font-size: 18px;
+
+    padding: 14px 40px;
+    width: 172px;
+    height: 50px;
+  }
+
+  .adv_menu {
+    max-width: 538px;
+  }
+
+  .adv_menu-img {
+    height: 196px;
+  }
+
+  .adv_menu-close {
+    top: 24px;
+    right: 24px;
+
+    width: 32px;
+    height: 32px;
+  }
+
+  .adv_menu-close-svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .adv_menu-modal {
+    padding: 40px;
+  }
+
+  .adv_menu-title {
+    font-size: 24px;
+    line-height: 1.16;
+    margin-bottom: 28px;
+  }
+
+  .form-input-person {
+    width: 313px;
+    height: 52px;
+    padding: 15px 24px;
+  }
+
+  .adv_form-label {
+    height: 52px;
+    font-size: 18px;
+    margin-left: 24px;
+  }
+
+  .form-input-person:focus + .adv_form-label,
+  .form-input-person:not(:placeholder-shown) + .adv_form-label {
+    transform: translateY(-33px);
+    font-size: 16px;
+  }
+
+  .adv_menu-button {
+    width: 137px;
+    height: 52px;
+    padding: 17px 33px;
+
+    position: relative;
+    color: transparent;
+  }
+
+  .adv_menu-button::before {
+    position: absolute;
+    content: 'Subscribe';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .adv_menu-button:focus,
+  .adv_menu-button:hover {
+    color: transparent;
+    background-color: #1e1823;
+  }
+}
+
+/* -------------------- Десктоп -------------------- */
+@media only screen and (min-width: 1200px) {
 }

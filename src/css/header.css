@@ -1,2 +1,274 @@
 .header {
+   background-color: #FAFAFA;
+}
+
+.container.header {
+    padding-top: 20px;
+    padding-bottom: 32px;
+}
+
+.icon-logo {
+    fill: transparent;
+    stroke: #FD9222;
+    display: block;
+}
+
+.header-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.header-contact-block,
+.header-social-container, 
+.header-nav-container {
+    display: none;
+}
+
+.icon-sandvich {
+    fill: transparent;
+    stroke: #111111;
+    display: flex;
+}
+
+.icon-sandvich:hover {
+    transform: scale(0.875);
+}
+
+.btn-sandvich {
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    padding: 0;
+}
+
+.header-logo-contact-container {
+    display: flex;
+    gap: 138px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.4px;
+    white-space: nowrap;
+}
+
+.logo-normal-font {
+    font-style: italic;
+}
+
+.header-logo {
+    padding: 5px 0;    
+}
+
+@media screen and (max-width: 1199px) {
+.header-nav-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 220px;
+    height: 812px;
+    background-color: #1E1823;
+    color: #FFF;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    overflow-y: auto;
+    padding: 20px;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out, transform 250ms ease-in-out;
+}
+    
+.header-nav-container.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.mobile-menu-container{
+    position: relative;
+    padding-top: 136px;
+    height: 100%;
+   
+    
+}
+.header-nav-link {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.28px;
+    white-space: nowrap;
+    
+}
+
+.mobile-menu-close {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    border-radius: 50%;
+    fill: #2e2f42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
+}
+
+.icon-close {
+    stroke: #fff;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+.icon-close:hover {
+    stroke: #FD9222;
+    
+}
+
+
+.header-social-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-icon-svg {
+    stroke: #fff;
+}
+
+.header-contacts-container {
+    display: none;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 460px;
+    
+}
+
+.header-icons-list {
+    display: flex;
+    gap: 18px;
+}
+
+.header-nav-list-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+}
+
+@media screen and (min-width: 768px) {
+.header-logo-contact-container {
+    gap: 503px;
+}
+.header-icon-svg:hover {
+    stroke: #FD9222;
+}
+
+.header-nav-link:hover,
+.header-contacts-link:hover {
+    color: #FD9222;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+.header-contact-block,
+.header-social-container,
+.header-nav-container {
+    display: flex;
+}
+
+.header-contacts-container,
+.btn-sandvich {
+    display: none;
+}
+
+.header-logo-contact-container {
+    margin-right: 188px;
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 24px;
+}
+
+.container.header {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-container {
+    margin-right: 137px;
+}
+
+.header-social-container {
+    width: 58px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.header-icon-svg {
+    display: block;
+    stroke: #111111;
+    fill: transparent;
+}
+
+.header-icons-list {
+    display: flex;
+    gap: 18px;
+}
+
+.header-nav-link {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.28px;
+    white-space: nowrap;
+}
+
+.header-logo {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.54px;
+}
+
+.icon-logo {
+    width: 24px;
+    height: 24px;
+}
+
+.mobile-menu-close {
+    display: none;
+}
+.mobile-menu-container {
+    display: flex;
+    gap: 137px;
+    align-items: center
+}
 }
