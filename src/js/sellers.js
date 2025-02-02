@@ -15,7 +15,6 @@ document.querySelectorAll('.top-sellers-modal-input').forEach(input => {
     if (tooltip) tooltip.remove();
   });
 });
-document;
 document
   .querySelectorAll('.top-sellers-gallery-buynow, .btn-text')
   .forEach(button => {
