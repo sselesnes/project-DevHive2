@@ -16,7 +16,7 @@ document.querySelectorAll('.top-sellers-modal-input').forEach(input => {
   });
 });
 document
-  .querySelectorAll('.top-sellers-gallery-buynow, .btn-text')
+  .querySelectorAll('.top-sellers-gallery-buynow, .modal-btn')
   .forEach(button => {
     button.addEventListener('click', () => {
       document.body.classList.add('modal-open');
