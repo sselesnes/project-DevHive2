@@ -15,11 +15,14 @@ document.querySelectorAll('.top-sellers-modal-input').forEach(input => {
     if (tooltip) tooltip.remove();
   });
 });
+document;
 document
-  .querySelector('.top-sellers-gallery-buynow, .btn-text')
-  .addEventListener('click', () => {
-    document.body.classList.add('modal-open');
-    document.querySelector('.top-sellers-modal').classList.add('is-open');
+  .querySelectorAll('.top-sellers-gallery-buynow, .btn-text')
+  .forEach(button => {
+    button.addEventListener('click', () => {
+      document.body.classList.add('modal-open');
+      document.querySelector('.top-sellers-modal').classList.add('is-open');
+    });
   });
 
 document
