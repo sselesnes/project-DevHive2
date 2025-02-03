@@ -1,25 +1,172 @@
 <section class="reviews" id="reviews">
   <div class="container">
-    <h2 class="reviews-heading">chocolate is loved</h2>
-    <div class="review-card">
-      <img src="" alt="" />
-      <p>Victoria Dobrzhanska</p>
-      <p>
-        I love this chocolate bar. Perfect combination of light crispy wafer,
-        covered in a thin layer chocolate.
-      </p>
-    </div>
-    <div class="reviews-swipe">
-      <ul>
-        <li>
-          <svg class="" width="" height="">
-            <use href=""></use>
+    <h2 class="reviews-heading">
+      <span class="rev-head-span">chocolate</span> is loved
+    </h2>
+
+    <ul class="rev-card-list">
+      <li class="review-card">
+        <img
+          src="/img/reviews/victoria-dobrzhanska.png"
+          srcset="
+            /img/reviews/victoria-dobrzhanska.png,
+            /img/reviews/victoria-dobrzhanska2x.png 2x
+          "
+          class="rev-img"
+          alt="Victoria Dobrzhanska"
+          width="80"
+          height="80"
+        />
+        <h3 class="rev-name">Victoria Dobrzhanska</h3>
+        <p class="rev-text">
+          I love this chocolate bar. Perfect combination of light crispy wafer,
+          covered in a thin layer chocolate.
+        </p>
+      </li>
+      <li class="review-card">
+        <img
+          src="/img/reviews/nazar-babenko.png"
+          srcset="
+            /img/reviews/nazar-babenko.png,
+            /img/reviews/nazar-babenko2x.png 2x
+          "
+          class="rev-img"
+          alt="Nazar Babenko"
+          width="80"
+          height="80"
+        />
+        <h3 class="rev-name">Nazar Babenko</h3>
+        <p class="rev-text">
+          This chocolate confection is a delight! A delight! The wafer is light
+          and crisp, the hazelnut cream is smooth, and the chocolate is good.
+        </p>
+      </li>
+      <li class="review-card">
+        <img
+          src="/img/reviews/olena-kampush.png"
+          srcset="
+            /img/reviews/olena-kampush.png,
+            /img/reviews/olena-kampush2x.png 2x
+          "
+          class="rev-img"
+          alt="Olena Kampusch"
+          width="80"
+          height="80"
+        />
+        <h3 class="rev-name">Nazar Babenko</h3>
+        <p class="rev-text">
+          Chocolate is a family favourite treat. Love the delicious smooth
+          chocolate and the creaminess inside. The wafer is soft but crunchy.
+        </p>
+      </li>
+    </ul>
+
+    <ul class="rev-swipe-list">
+      <li class="rev-swipe-item">
+        <a href="">
+          <svg class="rev-logo-oval" width="28" height="13">
+            <use href="/img/reviews/icons.svg#Rectangle"></use>
           </svg>
-        </li>
-      </ul>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <svg class="rev-logo" width="13" height="13">
+            <use href="/img/reviews/icons.svg#Ellipse"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <svg class="rev-logo" width="13" height="13">
+            <use href="/img/reviews/icons.svg#Ellipse"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <svg class="rev-logo" width="13" height="13">
+            <use href="/img/reviews/icons.svg#Ellipse"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <div class="review-button-div">
+      <button type="button" class="btn-reviews">Leave a review</button>
     </div>
-    <div>
-      <button class="btn-reviews"><p>Leave a review</p></button>
+  </div>
+
+  <!-- modal pop up -->
+  <div class="rev-modal-overlay">
+    <div class="rev-modal">
+      <button class="rev-close-btn" type="button">
+        <svg class="rev-svg-close" width="24" height="24">
+          <use href="/img/reviews/icons.svg#x-close"></use>
+        </svg>
+      </button>
+      <p class="rev-modal-cta">
+        leave a review <br class="break" />
+        about <span class="rev-modal-span">our chocolate</span>
+      </p>
+
+      <form>
+        <div class="rev-form-wrapper">
+          <input
+            class="rev-form-input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+          />
+        </div>
+        <div class="rev-form-wrapper">
+          <input
+            class="rev-form-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div class="rev-form-input-wrapper">
+          <div class="rev-form-prefix">
+            <svg
+              aria-hidden="true"
+              class="rev-form-input-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 40 32"
+            >
+              <path
+                fill="gold"
+                d="M40.209.495H.307V30.19h39.902V.495z"
+                style="fill: var(--color1, #ffd700)"
+              />
+              <path
+                fill="#0057b7"
+                d="M.307.495h39.902v14.847H.307V.495z"
+                style="fill: var(--color2, #0057b7)"
+              />
+            </svg>
+            <p class="rev-form-country-code">+380</p>
+          </div>
+          <input
+            class="rev-form-input-tel"
+            type="tel"
+            placeholder="Phone number"
+          />
+        </div>
+        <div class="rev-form-wrapper">
+          <textarea
+            class="rev-form-textarea"
+            name="text"
+            id="text"
+            placeholder="Enter text"
+          ></textarea>
+        </div>
+      </form>
+      <button class="rev-btn-send">Send</button>
     </div>
   </div>
 </section>
