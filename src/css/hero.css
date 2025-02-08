@@ -46,6 +46,7 @@
   letter-spacing: -0.6px;
   text-align: left;
   margin-bottom: 32px;
+  word-spacing: 2px;
 }
 
 /* flex-wrap: wrap; for mobile only!!! */
@@ -110,7 +111,7 @@
   flex-direction: row;
   gap: 14px;
   justify-content: start;
-  align-items: start;
+  align-items: center;
   /* margin-left: auto; */
 }
 .scroll-text {
