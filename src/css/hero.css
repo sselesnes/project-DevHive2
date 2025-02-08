@@ -33,7 +33,7 @@
   background-size: cover;
   margin-bottom: 68px;
 }
-/* проблема з переносом слів у відповідних місцях не вирішена( */
+/* проблема з переносом слів у відповідних місцях вирішена через word-spacing: 2px; */
 .hero-subtitle {
   max-width: 295px;
   height: 72px;
