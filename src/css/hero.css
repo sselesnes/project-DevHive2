@@ -27,7 +27,7 @@
       rgba(17, 17, 17, 0) 0%,
       rgba(17, 17, 17, 0.4) 100%
     ),
-    url(../img/hero/hero-mobile-squo@1.jpg);
+    url(/img/hero/hero-mob-webp@1.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -157,14 +157,14 @@
   height: 16px;
 }
 
-@media screen and (min-width: 375px) and (min-resolution: 19dpi) {
+@media screen and (max-width: 767.98px) and (min-resolution: 19dpi) {
   .hero .container {
     background-image: linear-gradient(
         180deg,
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(../img/hero/hero-mobile-squo@2.jpg);
+      url(/img/hero/hero-mob-webp@2.webp);
   }
 }
 
@@ -179,7 +179,7 @@
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(../img/hero/hero-tablet-squo@1.jpg);
+      url(/img/hero/hero-tab-webp@1.webp);
     margin-bottom: 50px;
   }
   /* проблема з переносом слів у відповідних місцях не вирішена( */
@@ -230,7 +230,7 @@
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(../img/hero/hero-tablet-squo@2.jpg);
+      url(/img/hero/hero-tab-webp@2.webp);
   }
 }
 /* =============desktop==================== */
@@ -244,7 +244,7 @@
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(../img/hero/hero-desk-squo@1.jpg);
+      url(/img/hero/hero-mob-webp@1.webp);
     margin-bottom: 72px;
   }
   .btns {
@@ -259,6 +259,6 @@
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(../img/hero/hero-desk-squo@2.jpg);
+      url(/img/hero/hero-desk-webp@2.webp);
   }
 }
