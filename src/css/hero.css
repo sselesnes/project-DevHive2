@@ -191,6 +191,8 @@
     letter-spacing: -0.84px;
     text-align: left;
     margin-bottom: 32px;
+    word-spacing:normal;
+    white-space: pre-line;
   }
   .btns {
     flex-wrap: nowrap;
